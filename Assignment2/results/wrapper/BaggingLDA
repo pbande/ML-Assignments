@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.LDA -- -R 1.0E-6
+Relation:     wrapper_bagging_lda_train_data
+Instances:    41836
+Attributes:   9
+              AlcoholDrinking
+              PhysicalHealth
+              MentalHealth
+              AgeCategory
+              GenHealth
+              Sex_Female
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.functions.LDA -R 1.0E-6
+
+Time taken to build model: 0.19 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.07 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7946               75.9656 %
+Incorrectly Classified Instances      2514               24.0344 %
+Kappa statistic                          0.5193
+Mean absolute error                      0.3374
+Root mean squared error                  0.4103
+Relative absolute error                 67.4893 %
+Root relative squared error             82.0647 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.799    0.279    0.741      0.799    0.769      0.521    0.828     0.799     Yes
+                 0.721    0.201    0.782      0.721    0.750      0.521    0.828     0.832     No
+Weighted Avg.    0.760    0.240    0.761      0.760    0.759      0.521    0.828     0.816     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4173 1053 |    a = Yes
+ 1461 3773 |    b = No
+

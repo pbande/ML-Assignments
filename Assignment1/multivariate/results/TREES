@@ -1,0 +1,126 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     univ_train_data
+Instances:    41836
+Attributes:   7
+              Stroke
+              DiffWalking
+              KidneyDisease
+              Diabetic
+              GenHealth
+              AgeCategory
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+AgeCategory <= 0.484375
+|   Stroke <= 0
+|   |   GenHealth <= 0.25
+|   |   |   AgeCategory <= 0.25
+|   |   |   |   GenHealth <= 0
+|   |   |   |   |   DiffWalking <= 0: No (53.0/15.0)
+|   |   |   |   |   DiffWalking > 0: Yes (38.0/14.0)
+|   |   |   |   GenHealth > 0: No (435.0/102.0)
+|   |   |   AgeCategory > 0.25
+|   |   |   |   KidneyDisease <= 0
+|   |   |   |   |   GenHealth <= 0: Yes (263.0/84.0)
+|   |   |   |   |   GenHealth > 0
+|   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   AgeCategory <= 0.40625: No (258.0/117.0)
+|   |   |   |   |   |   |   AgeCategory > 0.40625: Yes (207.0/97.0)
+|   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   AgeCategory <= 0.328125: No (30.0/12.0)
+|   |   |   |   |   |   |   |   AgeCategory > 0.328125: Yes (98.0/39.0)
+|   |   |   |   |   |   |   DiffWalking > 0: Yes (100.0/32.0)
+|   |   |   |   KidneyDisease > 0: Yes (135.0/31.0)
+|   |   GenHealth > 0.25: No (10511.0/1338.0)
+|   Stroke > 0: Yes (476.0/93.0)
+AgeCategory > 0.484375
+|   GenHealth <= 0.5
+|   |   Stroke <= 0
+|   |   |   GenHealth <= 0.25: Yes (6868.0/1384.0)
+|   |   |   GenHealth > 0.25
+|   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   AgeCategory <= 0.5625
+|   |   |   |   |   |   |   KidneyDisease <= 0: No (700.0/283.0)
+|   |   |   |   |   |   |   KidneyDisease > 0
+|   |   |   |   |   |   |   |   DiffWalking <= 0: Yes (22.0/9.0)
+|   |   |   |   |   |   |   |   DiffWalking > 0: No (6.0/2.0)
+|   |   |   |   |   |   AgeCategory > 0.5625: Yes (2131.0/947.0)
+|   |   |   |   |   Diabetic > 0.333333: Yes (1054.0/350.0)
+|   |   |   |   AgeCategory > 0.71875: Yes (4927.0/1389.0)
+|   |   Stroke > 0: Yes (2792.0/320.0)
+|   GenHealth > 0.5
+|   |   AgeCategory <= 0.71875
+|   |   |   Stroke <= 0
+|   |   |   |   Diabetic <= 0.333333: No (4639.0/1324.0)
+|   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   KidneyDisease <= 0
+|   |   |   |   |   |   AgeCategory <= 0.640625
+|   |   |   |   |   |   |   DiffWalking <= 0: No (257.0/115.0)
+|   |   |   |   |   |   |   DiffWalking > 0: Yes (46.0/16.0)
+|   |   |   |   |   |   AgeCategory > 0.640625: Yes (234.0/94.0)
+|   |   |   |   |   KidneyDisease > 0: Yes (35.0/8.0)
+|   |   |   Stroke > 0: Yes (204.0/64.0)
+|   |   AgeCategory > 0.71875
+|   |   |   Stroke <= 0
+|   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   AgeCategory <= 0.796875
+|   |   |   |   |   |   |   Diabetic <= 0: No (1215.0/583.0)
+|   |   |   |   |   |   |   Diabetic > 0
+|   |   |   |   |   |   |   |   DiffWalking <= 0: Yes (37.0/13.0)
+|   |   |   |   |   |   |   |   DiffWalking > 0: No (6.0)
+|   |   |   |   |   |   AgeCategory > 0.796875: Yes (1852.0/720.0)
+|   |   |   |   |   Diabetic > 0.333333: Yes (624.0/189.0)
+|   |   |   |   GenHealth > 0.75
+|   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   KidneyDisease <= 0
+|   |   |   |   |   |   |   AgeCategory <= 0.875: No (715.0/226.0)
+|   |   |   |   |   |   |   AgeCategory > 0.875: Yes (308.0/148.0)
+|   |   |   |   |   |   KidneyDisease > 0: Yes (39.0/16.0)
+|   |   |   |   |   Diabetic > 0: Yes (156.0/57.0)
+|   |   |   Stroke > 0: Yes (365.0/92.0)
+
+Number of Leaves  : 	36
+
+Size of the tree : 	71
+
+
+Time taken to build model: 0.23 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7882               75.3537 %
+Incorrectly Classified Instances      2578               24.6463 %
+Kappa statistic                          0.5071
+Mean absolute error                      0.3471
+Root mean squared error                  0.4157
+Relative absolute error                 69.4135 %
+Root relative squared error             83.1491 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.800    0.293    0.732      0.800    0.764      0.509    0.814     0.775     Yes
+                 0.707    0.200    0.780      0.707    0.742      0.509    0.814     0.790     No
+Weighted Avg.    0.754    0.246    0.756      0.754    0.753      0.509    0.814     0.783     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4179 1047 |    a = Yes
+ 1531 3703 |    b = No
+

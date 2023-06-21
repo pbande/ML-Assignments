@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     multi_train_data
+Instances:    41836
+Attributes:   10
+              Smoking
+              Stroke
+              DiffWalking
+              AgeCategory
+              Diabetic
+              GenHealth
+              KidneyDisease
+              Sex_Female
+              Race_Asian
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+
+Time taken to build model: 0.75 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.1 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7980               76.2906 %
+Incorrectly Classified Instances      2480               23.7094 %
+Kappa statistic                          0.5258
+Mean absolute error                      0.3162
+Root mean squared error                  0.4044
+Relative absolute error                 63.2389 %
+Root relative squared error             80.8878 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.800    0.274    0.744      0.800    0.771      0.527    0.838     0.816     Yes
+                 0.726    0.200    0.784      0.726    0.754      0.527    0.838     0.843     No
+Weighted Avg.    0.763    0.237    0.764      0.763    0.763      0.527    0.838     0.829     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4182 1044 |    a = Yes
+ 1436 3798 |    b = No
+

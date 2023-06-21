@@ -1,0 +1,318 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     wrapper_boosting_tam_train_data
+Instances:    41836
+Attributes:   13
+              Smoking
+              Stroke
+              PhysicalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              GenHealth
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Race_Asian
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+Smoking(2): HeartDisease GenHealth 
+Stroke(2): HeartDisease GenHealth 
+PhysicalHealth(4): HeartDisease GenHealth 
+DiffWalking(2): HeartDisease GenHealth 
+AgeCategory(12): HeartDisease DiffWalking 
+Diabetic(4): HeartDisease GenHealth 
+GenHealth(5): HeartDisease 
+KidneyDisease(2): HeartDisease GenHealth 
+SkinCancer(2): HeartDisease AgeCategory 
+Sex_Female(2): HeartDisease DiffWalking 
+Race_Asian(2): HeartDisease Race_White 
+Race_White(2): HeartDisease AgeCategory 
+HeartDisease(2): 
+LogScore Bayes: -371919.5210938363
+LogScore BDeu: -372589.25379836
+LogScore MDL: -372494.61962361884
+LogScore ENTROPY: -371382.58156821795
+LogScore AIC: -371591.58156821795
+
+
+Weight: 1.16
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+Smoking(2): HeartDisease GenHealth 
+Stroke(2): HeartDisease GenHealth 
+PhysicalHealth(3): HeartDisease GenHealth 
+DiffWalking(2): HeartDisease GenHealth 
+AgeCategory(6): HeartDisease DiffWalking 
+Diabetic(2): HeartDisease GenHealth 
+GenHealth(5): HeartDisease 
+KidneyDisease(2): HeartDisease GenHealth 
+SkinCancer(2): HeartDisease AgeCategory 
+Sex_Female(2): HeartDisease DiffWalking 
+Race_Asian(1): HeartDisease Smoking 
+Race_White(2): HeartDisease AgeCategory 
+HeartDisease(2): 
+LogScore Bayes: -330185.25369146763
+LogScore BDeu: -330520.4858180282
+LogScore MDL: -330472.79540747823
+LogScore ENTROPY: -329797.0593642442
+LogScore AIC: -329924.0593642442
+
+
+Weight: 0.34
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+Smoking(1): HeartDisease Stroke 
+Stroke(2): HeartDisease DiffWalking 
+PhysicalHealth(2): HeartDisease 
+DiffWalking(2): HeartDisease GenHealth 
+AgeCategory(5): HeartDisease DiffWalking 
+Diabetic(1): HeartDisease Smoking 
+GenHealth(4): HeartDisease PhysicalHealth 
+KidneyDisease(2): HeartDisease GenHealth 
+SkinCancer(1): HeartDisease Smoking 
+Sex_Female(1): HeartDisease Smoking 
+Race_Asian(1): HeartDisease Smoking 
+Race_White(2): HeartDisease AgeCategory 
+HeartDisease(2): 
+LogScore Bayes: -194886.3470909035
+LogScore BDeu: -195030.3754305271
+LogScore MDL: -195020.38596728115
+LogScore ENTROPY: -194695.81983627903
+LogScore AIC: -194756.81983627903
+
+
+Weight: 0.17
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+Smoking(1): HeartDisease Stroke 
+Stroke(2): HeartDisease DiffWalking 
+PhysicalHealth(2): HeartDisease 
+DiffWalking(2): HeartDisease GenHealth 
+AgeCategory(3): HeartDisease DiffWalking 
+Diabetic(1): HeartDisease Smoking 
+GenHealth(2): HeartDisease PhysicalHealth 
+KidneyDisease(1): HeartDisease Smoking 
+SkinCancer(1): HeartDisease Smoking 
+Sex_Female(1): HeartDisease Smoking 
+Race_Asian(1): HeartDisease Smoking 
+Race_White(1): HeartDisease Smoking 
+HeartDisease(2): 
+LogScore Bayes: -119361.89860542864
+LogScore BDeu: -119399.69348689438
+LogScore MDL: -119403.94350987143
+LogScore ENTROPY: -119281.56611621489
+LogScore AIC: -119304.56611621489
+
+
+Weight: 0.13
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+Smoking(1): HeartDisease 
+Stroke(1): HeartDisease Smoking 
+PhysicalHealth(1): HeartDisease Smoking 
+DiffWalking(2): HeartDisease Smoking 
+AgeCategory(4): HeartDisease DiffWalking 
+Diabetic(1): HeartDisease Smoking 
+GenHealth(1): HeartDisease Smoking 
+KidneyDisease(1): HeartDisease Smoking 
+SkinCancer(1): HeartDisease Smoking 
+Sex_Female(1): HeartDisease Smoking 
+Race_Asian(1): HeartDisease Smoking 
+Race_White(1): HeartDisease Smoking 
+HeartDisease(2): 
+LogScore Bayes: -69031.7394835783
+LogScore BDeu: -69062.98156078509
+LogScore MDL: -69069.66216152084
+LogScore ENTROPY: -68989.85081783179
+LogScore AIC: -69004.85081783179
+
+
+Weight: 0.1
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+Smoking(1): HeartDisease 
+Stroke(1): HeartDisease Smoking 
+PhysicalHealth(1): HeartDisease Smoking 
+DiffWalking(1): HeartDisease Smoking 
+AgeCategory(2): HeartDisease Smoking 
+Diabetic(1): HeartDisease Smoking 
+GenHealth(1): HeartDisease Smoking 
+KidneyDisease(1): HeartDisease Smoking 
+SkinCancer(1): HeartDisease Smoking 
+Sex_Female(1): HeartDisease Smoking 
+Race_Asian(1): HeartDisease Smoking 
+Race_White(1): HeartDisease Smoking 
+HeartDisease(2): 
+LogScore Bayes: -36539.10517012661
+LogScore BDeu: -36540.82307056786
+LogScore MDL: -36543.03430347107
+LogScore ENTROPY: -36527.07203473326
+LogScore AIC: -36530.07203473326
+
+
+Weight: 0.09
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+Smoking(1): HeartDisease 
+Stroke(1): HeartDisease Smoking 
+PhysicalHealth(1): HeartDisease Smoking 
+DiffWalking(1): HeartDisease Smoking 
+AgeCategory(2): HeartDisease Smoking 
+Diabetic(1): HeartDisease Smoking 
+GenHealth(1): HeartDisease Smoking 
+KidneyDisease(1): HeartDisease Smoking 
+SkinCancer(1): HeartDisease Smoking 
+Sex_Female(1): HeartDisease Smoking 
+Race_Asian(1): HeartDisease Smoking 
+Race_White(1): HeartDisease Smoking 
+HeartDisease(2): 
+LogScore Bayes: -36497.462789616155
+LogScore BDeu: -36499.1806900574
+LogScore MDL: -36501.38979359757
+LogScore ENTROPY: -36485.427524859755
+LogScore AIC: -36488.427524859755
+
+
+Weight: 0.06
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+Smoking(1): HeartDisease 
+Stroke(1): HeartDisease Smoking 
+PhysicalHealth(1): HeartDisease Smoking 
+DiffWalking(1): HeartDisease Smoking 
+AgeCategory(2): HeartDisease Smoking 
+Diabetic(1): HeartDisease Smoking 
+GenHealth(1): HeartDisease Smoking 
+KidneyDisease(1): HeartDisease Smoking 
+SkinCancer(1): HeartDisease Smoking 
+Sex_Female(1): HeartDisease Smoking 
+Race_Asian(1): HeartDisease Smoking 
+Race_White(1): HeartDisease Smoking 
+HeartDisease(2): 
+LogScore Bayes: -36465.58926419036
+LogScore BDeu: -36467.30716463161
+LogScore MDL: -36469.51543606256
+LogScore ENTROPY: -36453.55316732475
+LogScore AIC: -36456.55316732475
+
+
+Weight: 0.05
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+Smoking(1): HeartDisease 
+Stroke(1): HeartDisease Smoking 
+PhysicalHealth(1): HeartDisease Smoking 
+DiffWalking(1): HeartDisease Smoking 
+AgeCategory(2): HeartDisease Smoking 
+Diabetic(1): HeartDisease Smoking 
+GenHealth(1): HeartDisease Smoking 
+KidneyDisease(1): HeartDisease Smoking 
+SkinCancer(1): HeartDisease Smoking 
+Sex_Female(1): HeartDisease Smoking 
+Race_Asian(1): HeartDisease Smoking 
+Race_White(1): HeartDisease Smoking 
+HeartDisease(2): 
+LogScore Bayes: -36438.97267067908
+LogScore BDeu: -36440.69057112033
+LogScore MDL: -36442.89815042098
+LogScore ENTROPY: -36426.935881683174
+LogScore AIC: -36429.935881683174
+
+
+Weight: 0.05
+
+Bayes Network Classifier
+not using ADTree
+#attributes=13 #classindex=12
+Network structure (nodes followed by parents)
+Smoking(1): HeartDisease 
+Stroke(1): HeartDisease Smoking 
+PhysicalHealth(1): HeartDisease Smoking 
+DiffWalking(1): HeartDisease Smoking 
+AgeCategory(2): HeartDisease Smoking 
+Diabetic(1): HeartDisease Smoking 
+GenHealth(1): HeartDisease Smoking 
+KidneyDisease(1): HeartDisease Smoking 
+SkinCancer(1): HeartDisease Smoking 
+Sex_Female(1): HeartDisease Smoking 
+Race_Asian(1): HeartDisease Smoking 
+Race_White(1): HeartDisease Smoking 
+HeartDisease(2): 
+LogScore Bayes: -39485.48829451621
+LogScore BDeu: -39487.206194957456
+LogScore MDL: -39488.96010945248
+LogScore ENTROPY: -39472.99784071467
+LogScore AIC: -39475.99784071467
+
+
+Weight: 0.04
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 1.63 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.12 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7976               76.2524 %
+Incorrectly Classified Instances      2484               23.7476 %
+Kappa statistic                          0.5251
+Mean absolute error                      0.319 
+Root mean squared error                  0.4179
+Relative absolute error                 63.8002 %
+Root relative squared error             83.589  %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.794    0.269    0.747      0.794    0.770      0.526    0.820     0.775     Yes
+                 0.731    0.206    0.781      0.731    0.755      0.526    0.820     0.801     No
+Weighted Avg.    0.763    0.237    0.764      0.763    0.762      0.526    0.820     0.788     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4151 1075 |    a = Yes
+ 1409 3825 |    b = No
+

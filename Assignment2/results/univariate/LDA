@@ -1,0 +1,104 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LDA -R 1.0E-6
+Relation:     univ_train_data
+Instances:    41836
+Attributes:   7
+              Stroke
+              DiffWalking
+              KidneyDisease
+              Diabetic
+              GenHealth
+              AgeCategory
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 2.2218889456270956
+
+Mean vector:
+
+         6                   6
+         1  9.171526914619e-02
+         2  2.325270102304e-01
+         3  7.589157663257e-02
+         4  1.563964050100e-01
+         5  5.600141026867e-01
+         6  6.281555508413e-01
+
+Inverse of covariance matrix:
+
+  13.07 -0.94 -0.44 -0.46  1.21 -0.31
+ -0.94  7.46 -0.69 -0.74  4.07 -1.26
+ -0.44 -0.69  15.41 -1.46  1.53 -0.70
+ -0.46 -0.74 -1.46  14.56  2.50 -1.01
+  1.21  4.07  1.53  2.50  18.28  0.04
+ -0.31 -1.26 -0.70 -1.01  0.04  17.10
+
+
+
+Estimates for class value Yes
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+Stroke: 0.16
+DiffWalking: 0.35
+KidneyDisease: 0.12
+Diabetic: 0.23
+GenHealth: 0.45
+AgeCategory: 0.75
+
+Estimates for class value No
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+Stroke: 0.03
+DiffWalking: 0.11
+KidneyDisease: 0.03
+Diabetic: 0.09
+GenHealth: 0.67
+AgeCategory: 0.51
+
+
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7888               75.4111 %
+Incorrectly Classified Instances      2572               24.5889 %
+Kappa statistic                          0.5082
+Mean absolute error                      0.3369
+Root mean squared error                  0.4105
+Relative absolute error                 67.3784 %
+Root relative squared error             82.0957 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.770    0.262    0.746      0.770    0.758      0.508    0.828     0.803     Yes
+                 0.738    0.230    0.763      0.738    0.750      0.508    0.828     0.832     No
+Weighted Avg.    0.754    0.246    0.754      0.754    0.754      0.508    0.828     0.818     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4023 1203 |    a = Yes
+ 1369 3865 |    b = No
+

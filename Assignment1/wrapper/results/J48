@@ -1,0 +1,1689 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     tree_train_data
+Instances:    41836
+Attributes:   16
+              BMI
+              Smoking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              GenHealth
+              SleepTime
+              SkinCancer
+              Sex_Female
+              Race_Asian
+              Race_Black
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+AgeCategory <= 0.484375
+|   Stroke <= 0
+|   |   GenHealth <= 0.25
+|   |   |   AgeCategory <= 0.25
+|   |   |   |   AgeCategory <= 0.09375
+|   |   |   |   |   DiffWalking <= 0: No (206.0/29.0)
+|   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   Race_White <= 0: No (7.0/1.0)
+|   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   BMI <= 0.289983: No (5.0)
+|   |   |   |   |   |   |   |   BMI > 0.289983
+|   |   |   |   |   |   |   |   |   GenHealth <= 0: Yes (4.0)
+|   |   |   |   |   |   |   |   |   GenHealth > 0: No (4.0/1.0)
+|   |   |   |   |   |   Diabetic > 0: Yes (2.0)
+|   |   |   |   AgeCategory > 0.09375
+|   |   |   |   |   GenHealth <= 0
+|   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.25: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.25: No (2.0)
+|   |   |   |   |   |   |   |   DiffWalking > 0: Yes (2.0)
+|   |   |   |   |   |   |   Sex_Female > 0: No (14.0/2.0)
+|   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   SleepTime <= 0.125: Yes (7.0)
+|   |   |   |   |   |   |   SleepTime > 0.125
+|   |   |   |   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   Diabetic > 0.333333: No (2.0)
+|   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.433333: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.433333: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   Diabetic > 0: Yes (7.0)
+|   |   |   |   |   |   |   |   SleepTime > 0.625: No (2.0)
+|   |   |   |   |   GenHealth > 0
+|   |   |   |   |   |   AgeCategory <= 0.171875
+|   |   |   |   |   |   |   MentalHealth <= 0.166667: No (41.0/5.0)
+|   |   |   |   |   |   |   MentalHealth > 0.166667
+|   |   |   |   |   |   |   |   Diabetic <= 0.666667
+|   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.866667: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.866667
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.442516: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.442516: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Sex_Female > 0: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female <= 0: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.477234: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.477234: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.125: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.125
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.25: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.590495
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.590495: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.333333: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.333333: No (10.0/1.0)
+|   |   |   |   |   |   |   |   |   Race_Black > 0: No (8.0/2.0)
+|   |   |   |   |   |   |   |   Diabetic > 0.666667: No (3.0)
+|   |   |   |   |   |   AgeCategory > 0.171875
+|   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   BMI <= 0.655378: No (23.0/4.0)
+|   |   |   |   |   |   |   |   |   BMI > 0.655378: Yes (3.0)
+|   |   |   |   |   |   |   |   Race_White > 0: No (44.0/14.0)
+|   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   MentalHealth <= 0.566667
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.466667
+|   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333: Yes (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.361411: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.361411: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.45959: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.45959: No (6.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.466667: Yes (5.0)
+|   |   |   |   |   |   |   |   |   MentalHealth > 0.566667
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   Smoking <= 0: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.166667: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.166667: No (3.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0: No (10.0)
+|   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   Race_White <= 0: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Race_White > 0: No (16.0/3.0)
+|   |   |   AgeCategory > 0.25
+|   |   |   |   GenHealth <= 0
+|   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333: No (2.0)
+|   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: Yes (10.0/1.0)
+|   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333: Yes (3.0)
+|   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: No (17.0/6.0)
+|   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   BMI <= 0.595333: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   BMI > 0.595333: Yes (5.0)
+|   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.666667: Yes (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.666667
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.574274: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.574274: No (4.0)
+|   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.254126: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.254126: No (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.75: Yes (2.0)
+|   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   AgeCategory <= 0.328125
+|   |   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   Sex_Female <= 0: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   Sex_Female > 0: Yes (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   Diabetic > 0: Yes (2.0)
+|   |   |   |   |   |   |   |   |   AgeCategory > 0.328125
+|   |   |   |   |   |   |   |   |   |   Sex_Female <= 0: Yes (42.0/5.0)
+|   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.25: Yes (19.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: No (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.75: Yes (3.0)
+|   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   PhysicalHealth <= 0.666667: Yes (3.0)
+|   |   |   |   |   |   |   |   PhysicalHealth > 0.666667
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.25: No (4.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.25: Yes (4.0/1.0)
+|   |   |   |   |   Diabetic > 0.333333: Yes (130.0/25.0)
+|   |   |   |   GenHealth > 0
+|   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.328125
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: No (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.328125
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.573705: Yes (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.573705
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.717416: No (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.717416: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625: No (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.328125: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.328125: Yes (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.532726: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.532726: Yes (2.0)
+|   |   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.8
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625: No (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.233333: No (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.233333: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.8: Yes (5.0)
+|   |   |   |   |   |   |   |   |   |   Race_Black > 0: No (2.0)
+|   |   |   |   |   |   |   |   SleepTime > 0.625: No (4.0)
+|   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   BMI <= 0.718839
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (27.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.366667: Yes (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.366667: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.328125: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.328125
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.8: Yes (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.408936: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.408936: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   BMI > 0.718839: No (10.0/1.0)
+|   |   |   |   |   |   |   |   DiffWalking > 0: No (27.0/7.0)
+|   |   |   |   |   |   Diabetic > 0
+|   |   |   |   |   |   |   MentalHealth <= 0.733333
+|   |   |   |   |   |   |   |   SleepTime <= 0.125
+|   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.366667: No (3.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.366667: Yes (2.0)
+|   |   |   |   |   |   |   |   |   DiffWalking > 0: No (4.0)
+|   |   |   |   |   |   |   |   SleepTime > 0.125
+|   |   |   |   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333: No (3.0)
+|   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.25: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667: No (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.616107: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.616107: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.745589: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.745589: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625: Yes (26.0/8.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.328125
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.766932: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.766932: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.328125: Yes (33.0/9.0)
+|   |   |   |   |   |   |   MentalHealth > 0.733333: Yes (14.0/1.0)
+|   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   AgeCategory <= 0.40625
+|   |   |   |   |   |   |   |   BMI <= 0.308196: No (21.0/4.0)
+|   |   |   |   |   |   |   |   BMI > 0.308196
+|   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.5
+|   |   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.328125: No (55.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.328125
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.25: Yes (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: Yes (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.1: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Diabetic > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.066667: No (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.066667: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0.666667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.1: Yes (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.266667: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.266667: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.5: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.5: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.490324: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.490324: No (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Diabetic > 0.666667: No (2.0)
+|   |   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.46642: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.46642: Yes (11.0/1.0)
+|   |   |   |   |   |   |   |   |   PhysicalHealth > 0.5
+|   |   |   |   |   |   |   |   |   |   Race_Black <= 0: Yes (66.0/13.0)
+|   |   |   |   |   |   |   |   |   |   Race_Black > 0: No (5.0)
+|   |   |   |   |   |   |   AgeCategory > 0.40625
+|   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.25
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.2: Yes (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.2: No (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.566667: Yes (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.566667: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.25: Yes (41.0/5.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   Diabetic <= 0.333333: Yes (33.0/11.0)
+|   |   |   |   |   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.723108
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.460159: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.460159: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.723108: No (5.0)
+|   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   |   |   |   Sex_Female <= 0: Yes (27.0/11.0)
+|   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.266667: Yes (14.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.266667: No (16.0/5.0)
+|   |   |   |   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333: Yes (8.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.033333
+|   |   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female <= 0: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.7: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.7: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.8: Yes (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.8
+|   |   |   |   |   |   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.233333: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.233333: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.589641: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.589641: No (4.0)
+|   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   AgeCategory <= 0.328125: Yes (4.0)
+|   |   |   |   |   |   |   AgeCategory > 0.328125
+|   |   |   |   |   |   |   |   MentalHealth <= 0.066667: No (7.0)
+|   |   |   |   |   |   |   |   MentalHealth > 0.066667
+|   |   |   |   |   |   |   |   |   BMI <= 0.595333
+|   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.366667
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.2: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.2: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   MentalHealth > 0.366667: No (5.0)
+|   |   |   |   |   |   |   |   |   BMI > 0.595333: Yes (5.0)
+|   |   GenHealth > 0.25
+|   |   |   DiffWalking <= 0
+|   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   AgeCategory <= 0.328125: No (6554.0/480.0)
+|   |   |   |   |   AgeCategory > 0.328125
+|   |   |   |   |   |   GenHealth <= 0.5
+|   |   |   |   |   |   |   SleepTime <= 0.25
+|   |   |   |   |   |   |   |   PhysicalHealth <= 0
+|   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.125
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.125: No (25.0/4.0)
+|   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.125: No (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.125
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625: No (13.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.166667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.397837: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.397837
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.56403: No (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.56403: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.166667: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.3: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.3: No (3.0/1.0)
+|   |   |   |   |   |   |   |   PhysicalHealth > 0
+|   |   |   |   |   |   |   |   |   BMI <= 0.581389
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.1: Yes (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.433333: No (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.433333
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.125
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.9: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.9: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.125
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Sex_Female <= 0: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.326693: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.326693: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   BMI > 0.581389: Yes (10.0)
+|   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.1
+|   |   |   |   |   |   |   |   |   |   Race_Black <= 0: No (369.0/112.0)
+|   |   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   |   Smoking <= 0: No (16.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   Smoking > 0: Yes (10.0/3.0)
+|   |   |   |   |   |   |   |   |   PhysicalHealth > 0.1
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0: No (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.56403: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.56403: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.3: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.53671: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.53671: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.2: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: Yes (14.0/1.0)
+|   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   Race_Black <= 0: No (352.0/78.0)
+|   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.333333: No (34.0/9.0)
+|   |   |   |   |   |   |   |   |   |   MentalHealth > 0.333333: Yes (5.0)
+|   |   |   |   |   |   GenHealth > 0.5: No (2032.0/258.0)
+|   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   AgeCategory <= 0.25: No (149.0/15.0)
+|   |   |   |   |   AgeCategory > 0.25
+|   |   |   |   |   |   Diabetic <= 0.666667
+|   |   |   |   |   |   |   PhysicalHealth <= 0.166667
+|   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   AgeCategory <= 0.328125: No (40.0/9.0)
+|   |   |   |   |   |   |   |   |   AgeCategory > 0.328125
+|   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GenHealth <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.563176: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.563176: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   GenHealth > 0.5: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (10.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: Yes (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   GenHealth > 0.75: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: No (5.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.315879: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.315879: No (42.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (19.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (40.0/17.0)
+|   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   GenHealth <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.579966
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Race_White > 0: No (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.066667: Yes (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.579966: No (25.0/2.0)
+|   |   |   |   |   |   |   |   |   |   GenHealth > 0.5: No (32.0/5.0)
+|   |   |   |   |   |   |   |   |   Smoking > 0: No (51.0/17.0)
+|   |   |   |   |   |   |   PhysicalHealth > 0.166667
+|   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (3.0)
+|   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.551793: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.551793: Yes (5.0)
+|   |   |   |   |   |   |   |   |   Race_White > 0: Yes (15.0)
+|   |   |   |   |   |   |   |   SleepTime > 0.5: No (14.0/3.0)
+|   |   |   |   |   |   Diabetic > 0.666667: No (54.0/7.0)
+|   |   |   DiffWalking > 0
+|   |   |   |   AgeCategory <= 0.40625
+|   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   SleepTime <= 0
+|   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   AgeCategory <= 0.25: No (2.0)
+|   |   |   |   |   |   |   |   |   AgeCategory > 0.25: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   Sex_Female > 0: Yes (3.0)
+|   |   |   |   |   |   |   SleepTime > 0
+|   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.25: No (16.0/2.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   Race_Black <= 0: Yes (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Race_Black > 0: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.1: No (2.0)
+|   |   |   |   |   |   |   |   |   |   Sex_Female > 0: No (13.0/3.0)
+|   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   |   |   |   GenHealth <= 0.5: No (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   GenHealth > 0.5
+|   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.466667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   GenHealth > 0.75: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.466667: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Diabetic > 0: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Diabetic > 0.333333: Yes (2.0)
+|   |   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.666667
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.328125
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.466667: Yes (15.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.466667: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.328125: No (6.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.666667: Yes (4.0)
+|   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   Sex_Female <= 0: No (43.0/14.0)
+|   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   BMI <= 0.410074
+|   |   |   |   |   |   |   |   |   AgeCategory <= 0: No (3.0)
+|   |   |   |   |   |   |   |   |   AgeCategory > 0: Yes (9.0/2.0)
+|   |   |   |   |   |   |   |   BMI > 0.410074: No (50.0/4.0)
+|   |   |   |   |   SleepTime > 0.625: No (20.0/1.0)
+|   |   |   |   AgeCategory > 0.40625
+|   |   |   |   |   GenHealth <= 0.5
+|   |   |   |   |   |   MentalHealth <= 0.966667
+|   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   Smoking <= 0: No (22.0/7.0)
+|   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   Sex_Female <= 0: No (20.0/8.0)
+|   |   |   |   |   |   |   |   |   Sex_Female > 0: Yes (16.0/6.0)
+|   |   |   |   |   |   |   Diabetic > 0
+|   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.25: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.25: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   Race_White > 0: Yes (8.0/1.0)
+|   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.733333
+|   |   |   |   |   |   |   |   |   |   Diabetic <= 0.333333: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.77177
+|   |   |   |   |   |   |   |   |   |   |   |   Race_White <= 0: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: No (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.77177: Yes (6.0)
+|   |   |   |   |   |   |   |   |   PhysicalHealth > 0.733333: No (4.0)
+|   |   |   |   |   |   MentalHealth > 0.966667
+|   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   Sex_Female <= 0: Yes (2.0)
+|   |   |   |   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   |   |   |   Race_Black <= 0: No (3.0)
+|   |   |   |   |   |   |   |   |   Race_Black > 0: Yes (2.0)
+|   |   |   |   |   |   |   Race_White > 0: Yes (13.0/1.0)
+|   |   |   |   |   GenHealth > 0.5
+|   |   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   MentalHealth <= 0.6
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.25: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.5535: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.5535: No (4.0)
+|   |   |   |   |   |   |   |   |   MentalHealth > 0.6: No (2.0)
+|   |   |   |   |   |   |   |   Race_Black > 0: No (2.0)
+|   |   |   |   |   |   |   GenHealth > 0.75: No (5.0)
+|   |   |   |   |   |   Sex_Female > 0: No (21.0/3.0)
+|   Stroke > 0
+|   |   DiffWalking <= 0
+|   |   |   GenHealth <= 0.25: Yes (97.0/14.0)
+|   |   |   GenHealth > 0.25
+|   |   |   |   Diabetic <= 0
+|   |   |   |   |   Sex_Female <= 0
+|   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   Race_Asian <= 0
+|   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.25: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.40625: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   Race_Black <= 0: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Race_Black > 0: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   GenHealth > 0.75: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   GenHealth <= 0.75: Yes (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   GenHealth > 0.75: No (5.0/1.0)
+|   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: Yes (10.0)
+|   |   |   |   |   |   |   Race_Asian > 0: Yes (4.0)
+|   |   |   |   |   |   SkinCancer > 0: No (4.0/1.0)
+|   |   |   |   |   Sex_Female > 0
+|   |   |   |   |   |   BMI <= 0.761241
+|   |   |   |   |   |   |   MentalHealth <= 0.533333
+|   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   AgeCategory <= 0.40625
+|   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.066667: Yes (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   MentalHealth > 0.066667: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   AgeCategory > 0.40625: No (5.0/1.0)
+|   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   Race_White <= 0: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   GenHealth <= 0.75: Yes (12.0)
+|   |   |   |   |   |   |   |   |   |   GenHealth > 0.75
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.41605: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.41605: No (2.0)
+|   |   |   |   |   |   |   MentalHealth > 0.533333: No (12.0/4.0)
+|   |   |   |   |   |   BMI > 0.761241: No (7.0)
+|   |   |   |   Diabetic > 0
+|   |   |   |   |   Diabetic <= 0.333333: Yes (4.0)
+|   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   AgeCategory <= 0.328125
+|   |   |   |   |   |   |   GenHealth <= 0.75: No (8.0/2.0)
+|   |   |   |   |   |   |   GenHealth > 0.75: Yes (2.0)
+|   |   |   |   |   |   AgeCategory > 0.328125
+|   |   |   |   |   |   |   GenHealth <= 0.5: Yes (29.0/2.0)
+|   |   |   |   |   |   |   GenHealth > 0.5
+|   |   |   |   |   |   |   |   BMI <= 0.591633: Yes (3.0)
+|   |   |   |   |   |   |   |   BMI > 0.591633: No (2.0)
+|   |   DiffWalking > 0
+|   |   |   Race_Black <= 0: Yes (176.0/14.0)
+|   |   |   Race_Black > 0
+|   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   GenHealth <= 0: Yes (3.0)
+|   |   |   |   |   GenHealth > 0
+|   |   |   |   |   |   MentalHealth <= 0.9: No (8.0/1.0)
+|   |   |   |   |   |   MentalHealth > 0.9: Yes (3.0)
+|   |   |   |   Diabetic > 0.333333: Yes (13.0)
+AgeCategory > 0.484375
+|   GenHealth <= 0.5
+|   |   Stroke <= 0
+|   |   |   GenHealth <= 0.25: Yes (6868.0/1384.0)
+|   |   |   GenHealth > 0.25
+|   |   |   |   Sex_Female <= 0
+|   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   AgeCategory <= 0.5625
+|   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   |   |   Race_Black <= 0: No (160.0/56.0)
+|   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.63745: No (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.63745: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   DiffWalking > 0: Yes (2.0)
+|   |   |   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667: No (17.0/6.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: Yes (3.0)
+|   |   |   |   |   |   |   |   |   Race_White > 0: Yes (54.0/21.0)
+|   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   BMI <= 0.329254
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0: No (5.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.298236
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.266363: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.266363: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.298236: No (10.0)
+|   |   |   |   |   |   |   |   |   BMI > 0.329254
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.566667
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.463574: Yes (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.463574: No (18.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.566667: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0: Yes (156.0/63.0)
+|   |   |   |   |   |   |   |   Diabetic > 0: Yes (74.0/20.0)
+|   |   |   |   |   |   AgeCategory > 0.5625
+|   |   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Race_Asian <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625: No (15.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Race_Asian > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.511668: No (12.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.511668: Yes (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625: Yes (160.0/74.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.322994
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0: No (14.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.307911: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.307911: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.322994: Yes (150.0/47.0)
+|   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.4: Yes (62.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.4: No (4.0)
+|   |   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.333333: No (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.333333: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.532442
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.366818: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.366818
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.486056: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.486056: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.532442: Yes (17.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Diabetic > 0: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.625: No (3.0)
+|   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   Race_Black <= 0: Yes (678.0/221.0)
+|   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   DiffWalking <= 0: Yes (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0: Yes (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Diabetic > 0: Yes (2.0)
+|   |   |   |   |   |   |   Diabetic > 0.333333: Yes (489.0/127.0)
+|   |   |   |   |   AgeCategory > 0.71875
+|   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.566022: Yes (32.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.566022: No (5.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0: No (3.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: Yes (13.0/3.0)
+|   |   |   |   |   |   |   |   |   Smoking > 0: Yes (62.0/21.0)
+|   |   |   |   |   |   |   |   Diabetic > 0
+|   |   |   |   |   |   |   |   |   AgeCategory <= 0.796875: Yes (43.0/16.0)
+|   |   |   |   |   |   |   |   |   AgeCategory > 0.796875
+|   |   |   |   |   |   |   |   |   |   BMI <= 0.401252: No (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   BMI > 0.401252
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (13.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: Yes (14.0/3.0)
+|   |   |   |   |   |   |   DiffWalking > 0: Yes (70.0/17.0)
+|   |   |   |   |   |   Race_White > 0: Yes (2391.0/447.0)
+|   |   |   |   Sex_Female > 0
+|   |   |   |   |   AgeCategory <= 0.796875
+|   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   AgeCategory <= 0.5625
+|   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0: No (28.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0: Yes (16.0/6.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0: No (108.0/21.0)
+|   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.324986: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.324986: No (18.0/3.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0: No (91.0/36.0)
+|   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.732214: Yes (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.732214: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (6.0/1.0)
+|   |   |   |   |   |   |   |   AgeCategory > 0.5625
+|   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0: No (381.0/136.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.866667
+|   |   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.433333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.312749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: Yes (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.274616: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.274616: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.312749
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.500285: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.500285: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.394138: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.394138: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.428856: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.428856: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.966667: No (14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.966667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.556061: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.556061: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625: No (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.433333: Yes (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0: Yes (30.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Diabetic > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.133333: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.133333: No (5.0)
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.866667: No (17.0/3.0)
+|   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.54041: No (18.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.54041: Yes (13.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.336938: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.336938: No (16.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: Yes (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875: No (23.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0: Yes (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.244451: Yes (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.244451
+|   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0: No (98.0/41.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (13.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.1: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.333333
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0: Yes (122.0/51.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0: No (17.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Diabetic > 0: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.4: Yes (143.0/53.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.733333: No (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.733333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.9: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.9: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.333333: No (24.0/7.0)
+|   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.833808
+|   |   |   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.166667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.370803: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.370803
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.446215: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.446215: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.166667: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625: Yes (24.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.50996: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.50996
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.562038: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.562038
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.4: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0: No (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.625: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875: Yes (51.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.833808: No (8.0)
+|   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: Yes (109.0/37.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.5625: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.5625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.599886: Yes (15.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.599886: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625: No (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.507684: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.507684: No (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875: No (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.395561: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.395561: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.3: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.410928: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.410928: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0: Yes (22.0/11.0)
+|   |   |   |   |   |   |   |   |   Diabetic > 0
+|   |   |   |   |   |   |   |   |   |   BMI <= 0.780023
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.589641
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.367672: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.367672: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.589641: Yes (6.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: Yes (5.0)
+|   |   |   |   |   |   |   |   |   |   BMI > 0.780023: No (4.0/1.0)
+|   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   MentalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.457598: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.457598: Yes (20.0/5.0)
+|   |   |   |   |   |   |   |   |   |   Diabetic > 0: No (2.0)
+|   |   |   |   |   |   |   |   |   MentalHealth > 0.066667
+|   |   |   |   |   |   |   |   |   |   BMI <= 0.378486: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   BMI > 0.378486: No (15.0/1.0)
+|   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.25: Yes (20.0/5.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.166667
+|   |   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Race_Black <= 0: No (32.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: No (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: Yes (16.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0: No (7.0)
+|   |   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.3856
+|   |   |   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0.666667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0: No (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Diabetic > 0.666667: Yes (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.3856
+|   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0: Yes (49.0/20.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.233333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667: No (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.233333: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.625: Yes (27.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.625: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0: No (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.166667: Yes (27.0/6.0)
+|   |   |   |   |   |   |   |   DiffWalking > 0: Yes (94.0/31.0)
+|   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.133333
+|   |   |   |   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667: Yes (19.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.489471: Yes (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.489471: No (6.0)
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.133333: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.504269
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625: No (5.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.504269: Yes (14.0/3.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.625: Yes (6.0)
+|   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625
+|   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.5625
+|   |   |   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (21.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.133333: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.133333: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   AgeCategory > 0.5625
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.133333: Yes (40.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.133333
+|   |   |   |   |   |   |   |   |   |   |   |   DiffWalking <= 0: No (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.366667: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.366667: No (3.0)
+|   |   |   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.9: Yes (127.0/25.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.9
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.133333: No (5.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.133333: Yes (3.0)
+|   |   |   |   |   AgeCategory > 0.796875
+|   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   Race_Asian <= 0
+|   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.875
+|   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.533333: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.533333: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.875
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   Race_Black <= 0: No (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Race_Black > 0: Yes (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.066667: No (2.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0: No (54.0/22.0)
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0: Yes (9.0/3.0)
+|   |   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.066667: Yes (53.0/13.0)
+|   |   |   |   |   |   |   |   |   |   MentalHealth > 0.066667: No (8.0/2.0)
+|   |   |   |   |   |   |   |   Race_Asian > 0
+|   |   |   |   |   |   |   |   |   Smoking <= 0: No (13.0/2.0)
+|   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   DiffWalking <= 0: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   DiffWalking > 0: Yes (3.0)
+|   |   |   |   |   |   |   SkinCancer > 0: Yes (13.0/2.0)
+|   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   AgeCategory <= 0.875
+|   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0: No (63.0/24.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.166667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.282869: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.282869: Yes (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.166667: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.2: Yes (52.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.2
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333: No (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   DiffWalking > 0: Yes (47.0/17.0)
+|   |   |   |   |   |   |   |   |   Diabetic > 0
+|   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.625: Yes (48.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: No (4.0)
+|   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.2: Yes (14.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.2: No (2.0)
+|   |   |   |   |   |   |   |   AgeCategory > 0.875: Yes (520.0/167.0)
+|   |   |   |   |   |   |   Smoking > 0: Yes (569.0/168.0)
+|   |   Stroke > 0: Yes (2792.0/320.0)
+|   GenHealth > 0.5
+|   |   Stroke <= 0
+|   |   |   Sex_Female <= 0
+|   |   |   |   AgeCategory <= 0.640625
+|   |   |   |   |   PhysicalHealth <= 0.766667
+|   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   |   SleepTime <= 0.25
+|   |   |   |   |   |   |   |   |   BMI <= 0.577405
+|   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.5625: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.5625
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.451622: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.451622: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.5625
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.125
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.55037: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.55037: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.125: No (14.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.5625
+|   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0: No (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.411781: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.411781: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   BMI > 0.577405: Yes (10.0/1.0)
+|   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   Smoking <= 0: No (539.0/172.0)
+|   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333: No (348.0/126.0)
+|   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.133333
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.733333
+|   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.5625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.133333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.517075: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.517075: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.133333: No (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.5625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.458167: Yes (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.458167: No (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   DiffWalking > 0: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.348606: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.348606: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.733333: Yes (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.133333: Yes (10.0/1.0)
+|   |   |   |   |   |   |   GenHealth > 0.75: No (515.0/123.0)
+|   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   Race_Black <= 0: No (21.0/7.0)
+|   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: Yes (4.0)
+|   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.5625
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.500854: No (16.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.500854: Yes (23.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.5625: Yes (59.0/17.0)
+|   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.133333: No (6.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.133333
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.733333: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.733333: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   GenHealth > 0.75
+|   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.3
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.5625: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.5625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.3: No (2.0)
+|   |   |   |   |   |   |   |   |   |   SkinCancer > 0: No (2.0)
+|   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   AgeCategory <= 0.5625: Yes (6.0)
+|   |   |   |   |   |   |   |   AgeCategory > 0.5625
+|   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.58708: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.58708: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   Race_Black > 0: Yes (3.0)
+|   |   |   |   |   PhysicalHealth > 0.766667
+|   |   |   |   |   |   BMI <= 0.6107
+|   |   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   |   BMI <= 0.350882: No (2.0)
+|   |   |   |   |   |   |   |   BMI > 0.350882: Yes (17.0/1.0)
+|   |   |   |   |   |   |   GenHealth > 0.75: Yes (6.0)
+|   |   |   |   |   |   BMI > 0.6107: No (3.0)
+|   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   AgeCategory <= 0.796875
+|   |   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.466667
+|   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.233333
+|   |   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.443654: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.443654: No (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.433409: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.433409
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (21.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Diabetic > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.066667: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (32.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (188.0/90.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.411212: No (23.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.411212: Yes (35.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0: Yes (22.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333: Yes (229.0/92.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0: Yes (431.0/165.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.633182
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.354582: No (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.354582: Yes (42.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.633182: No (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.75: Yes (63.0/21.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.75: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.066667
+|   |   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.438247: No (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.438247
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.471827: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.471827: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.2: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.370803
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.370803
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.474388
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.433409: Yes (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.433409: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.474388: Yes (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   MentalHealth > 0.233333
+|   |   |   |   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.393569: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.393569: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.8: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.513375: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.513375: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875: Yes (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.5535: Yes (17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.5535
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.733333: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.733333: No (2.0)
+|   |   |   |   |   |   |   |   |   PhysicalHealth > 0.466667
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.125: No (2.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.125: Yes (30.0/4.0)
+|   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   Smoking <= 0: No (9.0)
+|   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.469266
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.320148: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.320148: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.469266: No (5.0)
+|   |   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: Yes (5.0/1.0)
+|   |   |   |   |   |   |   Diabetic > 0.333333: Yes (290.0/73.0)
+|   |   |   |   |   |   AgeCategory > 0.796875: Yes (1131.0/296.0)
+|   |   |   |   |   GenHealth > 0.75
+|   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   AgeCategory <= 0.796875: No (484.0/175.0)
+|   |   |   |   |   |   |   AgeCategory > 0.796875
+|   |   |   |   |   |   |   |   DiffWalking <= 0: Yes (278.0/105.0)
+|   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (4.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.875: No (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   AgeCategory > 0.875
+|   |   |   |   |   |   |   |   |   |   |   Smoking <= 0: Yes (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Smoking > 0: No (10.0/4.0)
+|   |   |   |   |   |   Diabetic > 0
+|   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875: No (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.549232: Yes (3.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.549232: No (2.0)
+|   |   |   |   |   |   |   |   |   Race_Black > 0: No (2.0)
+|   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   BMI <= 0.347183: No (3.0)
+|   |   |   |   |   |   |   |   |   BMI > 0.347183: Yes (13.0/2.0)
+|   |   |   |   |   |   |   Race_White > 0: Yes (109.0/26.0)
+|   |   |   Sex_Female > 0
+|   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   DiffWalking <= 0: No (2227.0/388.0)
+|   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   AgeCategory <= 0.640625
+|   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.25
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.2: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.2: Yes (2.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   Smoking <= 0: No (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: No (8.0/1.0)
+|   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   BMI <= 0.686966: No (28.0)
+|   |   |   |   |   |   |   |   |   BMI > 0.686966
+|   |   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.5625: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.5625: No (3.0)
+|   |   |   |   |   |   |   |   |   |   Race_Black > 0: Yes (2.0)
+|   |   |   |   |   |   |   AgeCategory > 0.640625
+|   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0: No (29.0/8.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0: Yes (11.0/3.0)
+|   |   |   |   |   |   |   |   |   SkinCancer > 0: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   Diabetic > 0: No (3.0)
+|   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   Race_White <= 0
+|   |   |   |   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   |   |   |   BMI <= 0.444792: No (3.0)
+|   |   |   |   |   |   |   |   |   |   BMI > 0.444792: Yes (2.0)
+|   |   |   |   |   |   |   |   |   GenHealth > 0.75: Yes (4.0)
+|   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.25: Yes (4.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   BMI <= 0.663062
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.640625
+|   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0: Yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.640625: Yes (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   BMI > 0.663062: No (5.0)
+|   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   PhysicalHealth <= 0.166667: No (4.0)
+|   |   |   |   |   |   |   |   PhysicalHealth > 0.166667: Yes (4.0/1.0)
+|   |   |   |   AgeCategory > 0.71875
+|   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   AgeCategory <= 0.875
+|   |   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   |   Smoking <= 0: No (599.0/203.0)
+|   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.796875
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.3: Yes (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.3: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.270063: Yes (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.270063: No (19.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.1: Yes (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.796875
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.688389: Yes (17.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.688389: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.796875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.625: No (122.0/51.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.345191: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.345191: No (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.796875
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.366249: No (52.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.366249: Yes (50.0/21.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.48634: Yes (16.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.48634: No (13.0)
+|   |   |   |   |   |   |   |   |   |   Race_Black > 0: Yes (19.0/5.0)
+|   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.2
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.796875: No (35.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.796875
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.405805: Yes (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.405805: No (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0: Yes (4.0)
+|   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0: Yes (10.0/4.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.2: No (11.0/1.0)
+|   |   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   Race_Black <= 0
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.066667: No (56.0/20.0)
+|   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.066667: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0.666667
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.796875: Yes (26.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.796875
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.625: Yes (31.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.625: No (11.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   Diabetic > 0.666667
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.429141: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.429141: No (2.0)
+|   |   |   |   |   |   |   |   |   Race_Black > 0
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.133333: No (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.133333: Yes (2.0)
+|   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   Race_White <= 0: No (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   |   |   SkinCancer <= 0: Yes (19.0/3.0)
+|   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.796875: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.796875: Yes (3.0/1.0)
+|   |   |   |   |   |   AgeCategory > 0.875
+|   |   |   |   |   |   |   SleepTime <= 0.25: Yes (30.0/5.0)
+|   |   |   |   |   |   |   SleepTime > 0.25
+|   |   |   |   |   |   |   |   Diabetic <= 0.333333
+|   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0: No (144.0/65.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0: Yes (38.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0: Yes (63.0/24.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0: No (28.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Smoking <= 0: Yes (43.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.457598
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.373933: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.373933: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.330108: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.330108: No (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   MentalHealth > 0.033333: Yes (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.457598: Yes (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SkinCancer > 0: No (5.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.625: No (53.0/20.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0: No (33.0/11.0)
+|   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: Yes (64.0/19.0)
+|   |   |   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   Race_White <= 0: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Race_White > 0: Yes (36.0/13.0)
+|   |   |   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: Yes (6.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: No (8.0/2.0)
+|   |   |   |   |   |   |   |   |   DiffWalking > 0: Yes (25.0)
+|   |   |   |   |   GenHealth > 0.75
+|   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   AgeCategory <= 0.875: No (380.0/70.0)
+|   |   |   |   |   |   |   AgeCategory > 0.875
+|   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.066667
+|   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.375: No (70.0/23.0)
+|   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.066667: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   Smoking > 0: No (45.0/14.0)
+|   |   |   |   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (2.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.375
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime <= 0.625: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SleepTime > 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.289414: No (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.289414: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   |   |   BMI <= 0.356858: Yes (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   BMI > 0.356858: No (4.0)
+|   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   Race_White <= 0: Yes (3.0)
+|   |   |   |   |   |   |   Race_White > 0
+|   |   |   |   |   |   |   |   AgeCategory <= 0.796875
+|   |   |   |   |   |   |   |   |   BMI <= 0.334377: Yes (2.0)
+|   |   |   |   |   |   |   |   |   BMI > 0.334377: No (10.0/1.0)
+|   |   |   |   |   |   |   |   AgeCategory > 0.796875
+|   |   |   |   |   |   |   |   |   AgeCategory <= 0.875: Yes (6.0/1.0)
+|   |   |   |   |   |   |   |   |   AgeCategory > 0.875
+|   |   |   |   |   |   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.438532: No (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.438532: Yes (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   SkinCancer > 0: Yes (5.0/1.0)
+|   |   Stroke > 0
+|   |   |   Sex_Female <= 0
+|   |   |   |   Race_Black <= 0: Yes (286.0/58.0)
+|   |   |   |   Race_Black > 0
+|   |   |   |   |   GenHealth <= 0.75: Yes (10.0/1.0)
+|   |   |   |   |   GenHealth > 0.75: No (5.0)
+|   |   |   Sex_Female > 0
+|   |   |   |   Race_White <= 0: Yes (55.0/8.0)
+|   |   |   |   Race_White > 0
+|   |   |   |   |   SkinCancer <= 0
+|   |   |   |   |   |   DiffWalking <= 0
+|   |   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   |   Smoking <= 0
+|   |   |   |   |   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   |   |   |   |   MentalHealth <= 0.2
+|   |   |   |   |   |   |   |   |   |   |   Diabetic <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.71875
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth <= 0.2: No (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   PhysicalHealth > 0.2: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AgeCategory > 0.71875: Yes (25.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   Diabetic > 0: Yes (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   MentalHealth > 0.2: Yes (6.0)
+|   |   |   |   |   |   |   |   |   SleepTime > 0.625: No (8.0/1.0)
+|   |   |   |   |   |   |   |   Smoking > 0: Yes (46.0/15.0)
+|   |   |   |   |   |   |   GenHealth > 0.75
+|   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   Smoking <= 0: Yes (13.0/1.0)
+|   |   |   |   |   |   |   |   |   Smoking > 0
+|   |   |   |   |   |   |   |   |   |   AgeCategory <= 0.796875: No (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   AgeCategory > 0.796875: Yes (3.0)
+|   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: No (3.0)
+|   |   |   |   |   |   DiffWalking > 0
+|   |   |   |   |   |   |   PhysicalHealth <= 0.066667
+|   |   |   |   |   |   |   |   PhysicalHealth <= 0.033333
+|   |   |   |   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   |   |   |   Diabetic <= 0.333333: Yes (14.0/3.0)
+|   |   |   |   |   |   |   |   |   |   Diabetic > 0.333333
+|   |   |   |   |   |   |   |   |   |   |   BMI <= 0.542686: Yes (2.0)
+|   |   |   |   |   |   |   |   |   |   |   BMI > 0.542686: No (2.0)
+|   |   |   |   |   |   |   |   |   GenHealth > 0.75
+|   |   |   |   |   |   |   |   |   |   SleepTime <= 0.5: No (3.0)
+|   |   |   |   |   |   |   |   |   |   SleepTime > 0.5: Yes (2.0)
+|   |   |   |   |   |   |   |   PhysicalHealth > 0.033333: No (4.0/1.0)
+|   |   |   |   |   |   |   PhysicalHealth > 0.066667: Yes (11.0)
+|   |   |   |   |   SkinCancer > 0
+|   |   |   |   |   |   GenHealth <= 0.75
+|   |   |   |   |   |   |   SleepTime <= 0.625
+|   |   |   |   |   |   |   |   SleepTime <= 0.375: Yes (7.0/2.0)
+|   |   |   |   |   |   |   |   SleepTime > 0.375: No (24.0/7.0)
+|   |   |   |   |   |   |   SleepTime > 0.625: Yes (3.0)
+|   |   |   |   |   |   GenHealth > 0.75
+|   |   |   |   |   |   |   SleepTime <= 0.5: Yes (3.0)
+|   |   |   |   |   |   |   SleepTime > 0.5
+|   |   |   |   |   |   |   |   AgeCategory <= 0.875: No (4.0/1.0)
+|   |   |   |   |   |   |   |   AgeCategory > 0.875: Yes (4.0/1.0)
+
+Number of Leaves  : 	813
+
+Size of the tree : 	1625
+
+
+Time taken to build model: 2.18 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.04 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7878               75.3155 %
+Incorrectly Classified Instances      2582               24.6845 %
+Kappa statistic                          0.5063
+Mean absolute error                      0.3308
+Root mean squared error                  0.4281
+Relative absolute error                 66.1615 %
+Root relative squared error             85.6151 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.787    0.280    0.737      0.787    0.761      0.507    0.794     0.737     Yes
+                 0.720    0.213    0.772      0.720    0.745      0.507    0.794     0.781     No
+Weighted Avg.    0.753    0.247    0.754      0.753    0.753      0.507    0.794     0.759     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4111 1115 |    a = Yes
+ 1467 3767 |    b = No
+

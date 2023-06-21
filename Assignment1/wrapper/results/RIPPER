@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     ripper_train_data
+Instances:    41836
+Attributes:   9
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              AgeCategory
+              Diabetic
+              GenHealth
+              Sex_Female
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(GenHealth >= 0.75) and (AgeCategory <= 0.328125) => HeartDisease=No (4898.0/329.0)
+(GenHealth >= 0.5) and (AgeCategory <= 0.25) => HeartDisease=No (1603.0/171.0)
+(GenHealth >= 0.5) and (AgeCategory <= 0.328125) => HeartDisease=No (545.0/119.0)
+(GenHealth >= 0.75) and (AgeCategory <= 0.640625) and (Sex_Female >= 1) and (Stroke <= 0) => HeartDisease=No (2607.0/338.0)
+(GenHealth >= 0.75) and (AgeCategory <= 0.484375) and (Diabetic <= 0) and (Stroke <= 0) => HeartDisease=No (1028.0/180.0)
+(AgeCategory <= 0.796875) and (Sex_Female >= 1) and (GenHealth >= 1) and (Stroke <= 0) => HeartDisease=No (491.0/79.0)
+(GenHealth >= 0.5) and (Diabetic <= 0.333333) and (AgeCategory <= 0.5625) and (Stroke <= 0) and (PhysicalHealth <= 0.066667) => HeartDisease=No (1998.0/631.0)
+(GenHealth >= 0.75) and (AgeCategory <= 0.71875) and (Sex_Female >= 1) and (Stroke <= 0) => HeartDisease=No (663.0/181.0)
+(AgeCategory <= 0.796875) and (Diabetic <= 0) and (GenHealth >= 1) and (Stroke <= 0) => HeartDisease=No (797.0/260.0)
+(Sex_Female >= 1) and (GenHealth >= 0.75) and (AgeCategory <= 0.875) and (Stroke <= 0) and (Diabetic <= 0.333333) => HeartDisease=No (1154.0/421.0)
+(Diabetic <= 0.333333) and (GenHealth >= 0.75) and (AgeCategory <= 0.640625) and (Stroke <= 0) and (PhysicalHealth <= 0.233333) => HeartDisease=No (569.0/214.0)
+(GenHealth >= 0.5) and (Sex_Female >= 1) and (Stroke <= 0) and (Diabetic <= 0.333333) and (AgeCategory <= 0.71875) and (PhysicalHealth <= 0.133333) => HeartDisease=No (780.0/330.0)
+(GenHealth >= 0.5) and (Diabetic <= 0.333333) and (Stroke <= 0) and (Sex_Female >= 1) and (AgeCategory <= 0.5625) => HeartDisease=No (194.0/76.0)
+(AgeCategory <= 0.25) => HeartDisease=No (559.0/168.0)
+(Sex_Female >= 1) and (Stroke <= 0) and (GenHealth >= 1) and (PhysicalHealth <= 0) => HeartDisease=No (178.0/70.0)
+(GenHealth >= 0.5) and (Stroke <= 0) and (AgeCategory <= 0.40625) => HeartDisease=No (165.0/63.0)
+(GenHealth >= 0.5) and (Sex_Female >= 1) and (Stroke <= 0) and (AgeCategory <= 0.796875) and (Race_White <= 0) => HeartDisease=No (333.0/156.0)
+(GenHealth >= 0.5) and (Stroke <= 0) and (AgeCategory <= 0.484375) and (PhysicalHealth <= 0.033333) => HeartDisease=No (105.0/44.0)
+(AgeCategory <= 0.71875) and (Stroke <= 0) and (Race_White <= 0) and (AgeCategory >= 0.71875) and (PhysicalHealth <= 0) and (GenHealth >= 0.75) and (Diabetic <= 0) => HeartDisease=No (42.0/13.0)
+ => HeartDisease=Yes (23127.0/6048.0)
+
+Number of Rules : 20
+
+
+Time taken to build model: 9.14 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7958               76.0803 %
+Incorrectly Classified Instances      2502               23.9197 %
+Kappa statistic                          0.5216
+Mean absolute error                      0.3467
+Root mean squared error                  0.4171
+Relative absolute error                 69.3336 %
+Root relative squared error             83.4267 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.809    0.287    0.738      0.809    0.772      0.524    0.790     0.721     Yes
+                 0.713    0.191    0.789      0.713    0.749      0.524    0.790     0.777     No
+Weighted Avg.    0.761    0.239    0.763      0.761    0.760      0.524    0.790     0.749     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4226 1000 |    a = Yes
+ 1502 3732 |    b = No
+

@@ -1,0 +1,252 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     univ_train_data
+Instances:    41836
+Attributes:   7
+              Stroke
+              DiffWalking
+              KidneyDisease
+              Diabetic
+              GenHealth
+              AgeCategory
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Bayes Network Classifier
+not using ADTree
+#attributes=7 #classindex=6
+Network structure (nodes followed by parents)
+Stroke(2): HeartDisease GenHealth 
+DiffWalking(2): HeartDisease GenHealth 
+KidneyDisease(2): HeartDisease GenHealth 
+Diabetic(4): HeartDisease GenHealth 
+GenHealth(5): HeartDisease 
+AgeCategory(12): HeartDisease DiffWalking 
+HeartDisease(2): 
+LogScore Bayes: -247157.50661490514
+LogScore BDeu: -247523.30251314508
+LogScore MDL: -247477.94394051988
+LogScore ENTROPY: -246876.69848472902
+LogScore AIC: -246989.69848472902
+
+
+Weight: 1.09
+
+Bayes Network Classifier
+not using ADTree
+#attributes=7 #classindex=6
+Network structure (nodes followed by parents)
+Stroke(2): HeartDisease GenHealth 
+DiffWalking(2): HeartDisease GenHealth 
+KidneyDisease(2): HeartDisease GenHealth 
+Diabetic(2): HeartDisease GenHealth 
+GenHealth(5): HeartDisease 
+AgeCategory(5): HeartDisease DiffWalking 
+HeartDisease(2): 
+LogScore Bayes: -192083.95010503693
+LogScore BDeu: -192245.7077791066
+LogScore MDL: -192229.52741519554
+LogScore ENTROPY: -191883.67825920964
+LogScore AIC: -191948.67825920964
+
+
+Weight: 0.28
+
+Bayes Network Classifier
+not using ADTree
+#attributes=7 #classindex=6
+Network structure (nodes followed by parents)
+Stroke(2): HeartDisease GenHealth 
+DiffWalking(2): HeartDisease GenHealth 
+KidneyDisease(2): HeartDisease GenHealth 
+Diabetic(2): HeartDisease GenHealth 
+GenHealth(5): HeartDisease 
+AgeCategory(4): HeartDisease DiffWalking 
+HeartDisease(2): 
+LogScore Bayes: -176946.4796773376
+LogScore BDeu: -177093.84460162715
+LogScore MDL: -177080.717939187
+LogScore ENTROPY: -176756.15180818483
+LogScore AIC: -176817.15180818483
+
+
+Weight: 0.27
+
+Bayes Network Classifier
+not using ADTree
+#attributes=7 #classindex=6
+Network structure (nodes followed by parents)
+Stroke(2): HeartDisease DiffWalking 
+DiffWalking(2): HeartDisease GenHealth 
+KidneyDisease(1): HeartDisease Stroke 
+Diabetic(1): HeartDisease Stroke 
+GenHealth(3): HeartDisease 
+AgeCategory(4): HeartDisease DiffWalking 
+HeartDisease(2): 
+LogScore Bayes: -127541.80868812601
+LogScore BDeu: -127595.37590651025
+LogScore MDL: -127596.32907988937
+LogScore ENTROPY: -127452.66866124909
+LogScore AIC: -127479.66866124909
+
+
+Weight: 0.1
+
+Bayes Network Classifier
+not using ADTree
+#attributes=7 #classindex=6
+Network structure (nodes followed by parents)
+Stroke(2): HeartDisease DiffWalking 
+DiffWalking(2): HeartDisease 
+KidneyDisease(1): HeartDisease Stroke 
+Diabetic(1): HeartDisease Stroke 
+GenHealth(2): HeartDisease DiffWalking 
+AgeCategory(3): HeartDisease DiffWalking 
+HeartDisease(2): 
+LogScore Bayes: -86540.76668339924
+LogScore BDeu: -86572.13722764677
+LogScore MDL: -86579.39897193603
+LogScore ENTROPY: -86478.30460326321
+LogScore AIC: -86497.30460326321
+
+
+Weight: 0.11
+
+Bayes Network Classifier
+not using ADTree
+#attributes=7 #classindex=6
+Network structure (nodes followed by parents)
+Stroke(2): HeartDisease DiffWalking 
+DiffWalking(2): HeartDisease 
+KidneyDisease(1): HeartDisease Stroke 
+Diabetic(1): HeartDisease Stroke 
+GenHealth(2): HeartDisease DiffWalking 
+AgeCategory(3): HeartDisease DiffWalking 
+HeartDisease(2): 
+LogScore Bayes: -90272.01107738189
+LogScore BDeu: -90303.38162162939
+LogScore MDL: -90309.40069937952
+LogScore ENTROPY: -90208.3063307067
+LogScore AIC: -90227.3063307067
+
+
+Weight: 0.12
+
+Bayes Network Classifier
+not using ADTree
+#attributes=7 #classindex=6
+Network structure (nodes followed by parents)
+Stroke(1): HeartDisease 
+DiffWalking(1): HeartDisease Stroke 
+KidneyDisease(1): HeartDisease Stroke 
+Diabetic(1): HeartDisease Stroke 
+GenHealth(1): HeartDisease Stroke 
+AgeCategory(3): HeartDisease Stroke 
+HeartDisease(2): 
+LogScore Bayes: -49131.45318424066
+LogScore BDeu: -49136.933100832466
+LogScore MDL: -49139.02358948335
+LogScore ENTROPY: -49112.41980825367
+LogScore AIC: -49117.41980825367
+
+
+Weight: 0.08
+
+Bayes Network Classifier
+not using ADTree
+#attributes=7 #classindex=6
+Network structure (nodes followed by parents)
+Stroke(1): HeartDisease 
+DiffWalking(1): HeartDisease Stroke 
+KidneyDisease(1): HeartDisease Stroke 
+Diabetic(1): HeartDisease Stroke 
+GenHealth(1): HeartDisease Stroke 
+AgeCategory(2): HeartDisease Stroke 
+HeartDisease(2): 
+LogScore Bayes: -36392.491640311564
+LogScore BDeu: -36394.20954075281
+LogScore MDL: -36396.42906278155
+LogScore ENTROPY: -36380.46679404374
+LogScore AIC: -36383.46679404374
+
+
+Weight: 0.06
+
+Bayes Network Classifier
+not using ADTree
+#attributes=7 #classindex=6
+Network structure (nodes followed by parents)
+Stroke(1): HeartDisease 
+DiffWalking(1): HeartDisease Stroke 
+KidneyDisease(1): HeartDisease Stroke 
+Diabetic(1): HeartDisease Stroke 
+GenHealth(1): HeartDisease Stroke 
+AgeCategory(2): HeartDisease Stroke 
+HeartDisease(2): 
+LogScore Bayes: -36365.97727536423
+LogScore BDeu: -36367.69517580548
+LogScore MDL: -36369.913715790135
+LogScore ENTROPY: -36353.95144705233
+LogScore AIC: -36356.95144705233
+
+
+Weight: 0.05
+
+Bayes Network Classifier
+not using ADTree
+#attributes=7 #classindex=6
+Network structure (nodes followed by parents)
+Stroke(1): HeartDisease 
+DiffWalking(1): HeartDisease Stroke 
+KidneyDisease(1): HeartDisease Stroke 
+Diabetic(1): HeartDisease Stroke 
+GenHealth(1): HeartDisease Stroke 
+AgeCategory(2): HeartDisease Stroke 
+HeartDisease(2): 
+LogScore Bayes: -36345.4053849264
+LogScore BDeu: -36347.12328536765
+LogScore MDL: -36349.341296751874
+LogScore ENTROPY: -36333.37902801407
+LogScore AIC: -36336.37902801407
+
+
+Weight: 0.04
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.88 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.07 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7887               75.4015 %
+Incorrectly Classified Instances      2573               24.5985 %
+Kappa statistic                          0.5081
+Mean absolute error                      0.331 
+Root mean squared error                  0.4242
+Relative absolute error                 66.1931 %
+Root relative squared error             84.8321 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.790    0.282    0.737      0.790    0.762      0.509    0.812     0.772     Yes
+                 0.718    0.210    0.774      0.718    0.745      0.509    0.812     0.800     No
+Weighted Avg.    0.754    0.246    0.755      0.754    0.754      0.509    0.812     0.786     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4128 1098 |    a = Yes
+ 1475 3759 |    b = No
+

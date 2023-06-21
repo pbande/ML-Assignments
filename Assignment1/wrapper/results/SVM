@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     svm_train_data
+Instances:    41836
+Attributes:   13
+              AlcoholDrinking
+              Stroke
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              SkinCancer
+              Sex_Female
+              Race_Asian
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: Yes, No
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.2187 * (normalized) AlcoholDrinking
+ +      -0.8932 * (normalized) Stroke
+ +      -0.2459 * (normalized) MentalHealth
+ +      -0.2621 * (normalized) DiffWalking
+ +      -3.1546 * (normalized) AgeCategory
+ +      -0.7485 * (normalized) Diabetic
+ +       0.0178 * (normalized) PhysicalActivity
+ +       1.9917 * (normalized) GenHealth
+ +       0.089  * (normalized) SleepTime
+ +      -0.0788 * (normalized) SkinCancer
+ +       0.7347 * (normalized) Sex_Female
+ +       0.4753 * (normalized) Race_Asian
+ +       0.7251
+
+Number of kernel evaluations: 503330216 (35.054% cached)
+
+
+
+Time taken to build model: 39.65 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.05 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        8000               76.4818 %
+Incorrectly Classified Instances      2460               23.5182 %
+Kappa statistic                          0.5297
+Mean absolute error                      0.2352
+Root mean squared error                  0.485 
+Relative absolute error                 47.0363 %
+Root relative squared error             96.991  %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.793    0.263    0.750      0.793    0.771      0.531    0.765     0.698     Yes
+                 0.737    0.207    0.781      0.737    0.758      0.531    0.765     0.707     No
+Weighted Avg.    0.765    0.235    0.766      0.765    0.765      0.531    0.765     0.703     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4145 1081 |    a = Yes
+ 1379 3855 |    b = No
+

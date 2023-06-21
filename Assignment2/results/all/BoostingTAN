@@ -1,0 +1,439 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(4): HeartDisease Diabetic 
+Smoking(2): HeartDisease GenHealth 
+AlcoholDrinking(2): HeartDisease Smoking 
+Stroke(2): HeartDisease GenHealth 
+PhysicalHealth(4): HeartDisease MentalHealth 
+MentalHealth(4): HeartDisease Sex_Female 
+DiffWalking(2): HeartDisease GenHealth 
+AgeCategory(12): HeartDisease MentalHealth 
+Diabetic(4): HeartDisease GenHealth 
+PhysicalActivity(2): HeartDisease GenHealth 
+GenHealth(5): HeartDisease PhysicalHealth 
+SleepTime(7): HeartDisease MentalHealth 
+Asthma(2): HeartDisease GenHealth 
+KidneyDisease(2): HeartDisease GenHealth 
+SkinCancer(2): HeartDisease AgeCategory 
+Sex_Female(2): HeartDisease 
+Sex_Male(2): HeartDisease Sex_Female 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(2): HeartDisease Race_White 
+Race_Black(1): HeartDisease BMI 
+Race_Hispanic(2): HeartDisease Race_White 
+Race_Other(1): HeartDisease BMI 
+Race_White(2): HeartDisease AgeCategory 
+HeartDisease(2): 
+LogScore Bayes: -586444.036637297
+LogScore BDeu: -587772.1303711437
+LogScore MDL: -587565.7515826101
+LogScore ENTROPY: -585517.2604279245
+LogScore AIC: -585902.2604279245
+
+
+Weight: 1.13
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(2): HeartDisease Diabetic 
+Smoking(2): HeartDisease GenHealth 
+AlcoholDrinking(1): HeartDisease BMI 
+Stroke(2): HeartDisease GenHealth 
+PhysicalHealth(3): HeartDisease MentalHealth 
+MentalHealth(3): HeartDisease Sex_Female 
+DiffWalking(2): HeartDisease GenHealth 
+AgeCategory(6): HeartDisease MentalHealth 
+Diabetic(2): HeartDisease GenHealth 
+PhysicalActivity(1): HeartDisease BMI 
+GenHealth(5): HeartDisease PhysicalHealth 
+SleepTime(1): HeartDisease BMI 
+Asthma(2): HeartDisease GenHealth 
+KidneyDisease(2): HeartDisease GenHealth 
+SkinCancer(2): HeartDisease AgeCategory 
+Sex_Female(2): HeartDisease 
+Sex_Male(2): HeartDisease Sex_Female 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(2): HeartDisease Race_White 
+Race_Black(2): HeartDisease Race_White 
+Race_Hispanic(2): HeartDisease Race_White 
+Race_Other(1): HeartDisease BMI 
+Race_White(2): HeartDisease AgeCategory 
+HeartDisease(2): 
+LogScore Bayes: -417910.39911693294
+LogScore BDeu: -418386.42641119956
+LogScore MDL: -418355.9442081543
+LogScore ENTROPY: -417392.88732763956
+LogScore AIC: -417573.8873276396
+
+
+Weight: 0.42
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(1): HeartDisease Stroke 
+Smoking(1): HeartDisease BMI 
+AlcoholDrinking(1): HeartDisease BMI 
+Stroke(2): HeartDisease GenHealth 
+PhysicalHealth(2): HeartDisease GenHealth 
+MentalHealth(1): HeartDisease BMI 
+DiffWalking(1): HeartDisease BMI 
+AgeCategory(5): HeartDisease GenHealth 
+Diabetic(1): HeartDisease BMI 
+PhysicalActivity(1): HeartDisease BMI 
+GenHealth(4): HeartDisease 
+SleepTime(1): HeartDisease BMI 
+Asthma(2): HeartDisease GenHealth 
+KidneyDisease(2): HeartDisease GenHealth 
+SkinCancer(1): HeartDisease BMI 
+Sex_Female(1): HeartDisease BMI 
+Sex_Male(1): HeartDisease BMI 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(1): HeartDisease BMI 
+Race_Black(1): HeartDisease BMI 
+Race_Hispanic(1): HeartDisease BMI 
+Race_Other(1): HeartDisease BMI 
+Race_White(2): HeartDisease AgeCategory 
+HeartDisease(2): 
+LogScore Bayes: -185901.0642290193
+LogScore BDeu: -186121.20856139305
+LogScore MDL: -186097.8695859483
+LogScore ENTROPY: -185666.8883300274
+LogScore AIC: -185747.8883300274
+
+
+Weight: 0.22
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(1): HeartDisease Stroke 
+Smoking(1): HeartDisease BMI 
+AlcoholDrinking(1): HeartDisease BMI 
+Stroke(2): HeartDisease GenHealth 
+PhysicalHealth(2): HeartDisease GenHealth 
+MentalHealth(1): HeartDisease BMI 
+DiffWalking(1): HeartDisease BMI 
+AgeCategory(3): HeartDisease PhysicalHealth 
+Diabetic(1): HeartDisease BMI 
+PhysicalActivity(1): HeartDisease BMI 
+GenHealth(2): HeartDisease 
+SleepTime(2): HeartDisease PhysicalHealth 
+Asthma(1): HeartDisease BMI 
+KidneyDisease(2): HeartDisease GenHealth 
+SkinCancer(1): HeartDisease BMI 
+Sex_Female(1): HeartDisease BMI 
+Sex_Male(1): HeartDisease BMI 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(1): HeartDisease BMI 
+Race_Black(1): HeartDisease BMI 
+Race_Hispanic(1): HeartDisease BMI 
+Race_Other(1): HeartDisease BMI 
+Race_White(1): HeartDisease BMI 
+HeartDisease(2): 
+LogScore Bayes: -126850.5431187131
+LogScore BDeu: -126894.76233739707
+LogScore MDL: -126901.94036121714
+LogScore ENTROPY: -126758.27994257685
+LogScore AIC: -126785.27994257685
+
+
+Weight: 0.19
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(1): HeartDisease Stroke 
+Smoking(1): HeartDisease BMI 
+AlcoholDrinking(1): HeartDisease BMI 
+Stroke(2): HeartDisease PhysicalActivity 
+PhysicalHealth(1): HeartDisease BMI 
+MentalHealth(1): HeartDisease BMI 
+DiffWalking(1): HeartDisease BMI 
+AgeCategory(3): HeartDisease Stroke 
+Diabetic(1): HeartDisease BMI 
+PhysicalActivity(2): HeartDisease Sex_Female 
+GenHealth(1): HeartDisease BMI 
+SleepTime(1): HeartDisease BMI 
+Asthma(1): HeartDisease BMI 
+KidneyDisease(1): HeartDisease BMI 
+SkinCancer(1): HeartDisease BMI 
+Sex_Female(2): HeartDisease 
+Sex_Male(2): HeartDisease Sex_Female 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(1): HeartDisease BMI 
+Race_Black(1): HeartDisease BMI 
+Race_Hispanic(1): HeartDisease BMI 
+Race_Other(1): HeartDisease BMI 
+Race_White(1): HeartDisease BMI 
+HeartDisease(2): 
+LogScore Bayes: -110010.45842654782
+LogScore BDeu: -110048.25330801355
+LogScore MDL: -110070.02651133288
+LogScore ENTROPY: -109947.64911767632
+LogScore AIC: -109970.64911767632
+
+
+Weight: 0.14
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(1): HeartDisease 
+Smoking(1): HeartDisease BMI 
+AlcoholDrinking(1): HeartDisease BMI 
+Stroke(1): HeartDisease BMI 
+PhysicalHealth(1): HeartDisease BMI 
+MentalHealth(1): HeartDisease BMI 
+DiffWalking(1): HeartDisease BMI 
+AgeCategory(2): HeartDisease BMI 
+Diabetic(1): HeartDisease BMI 
+PhysicalActivity(1): HeartDisease BMI 
+GenHealth(1): HeartDisease BMI 
+SleepTime(1): HeartDisease BMI 
+Asthma(1): HeartDisease BMI 
+KidneyDisease(1): HeartDisease BMI 
+SkinCancer(1): HeartDisease BMI 
+Sex_Female(1): HeartDisease BMI 
+Sex_Male(1): HeartDisease BMI 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(1): HeartDisease BMI 
+Race_Black(1): HeartDisease BMI 
+Race_Hispanic(1): HeartDisease BMI 
+Race_Other(1): HeartDisease BMI 
+Race_White(1): HeartDisease BMI 
+HeartDisease(2): 
+LogScore Bayes: -36396.846529642164
+LogScore BDeu: -36398.56443008341
+LogScore MDL: -36400.78059384411
+LogScore ENTROPY: -36384.8183251063
+LogScore AIC: -36387.8183251063
+
+
+Weight: 0.08
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(1): HeartDisease 
+Smoking(1): HeartDisease BMI 
+AlcoholDrinking(1): HeartDisease BMI 
+Stroke(1): HeartDisease BMI 
+PhysicalHealth(1): HeartDisease BMI 
+MentalHealth(1): HeartDisease BMI 
+DiffWalking(1): HeartDisease BMI 
+AgeCategory(2): HeartDisease BMI 
+Diabetic(1): HeartDisease BMI 
+PhysicalActivity(1): HeartDisease BMI 
+GenHealth(1): HeartDisease BMI 
+SleepTime(1): HeartDisease BMI 
+Asthma(1): HeartDisease BMI 
+KidneyDisease(1): HeartDisease BMI 
+SkinCancer(1): HeartDisease BMI 
+Sex_Female(1): HeartDisease BMI 
+Sex_Male(1): HeartDisease BMI 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(1): HeartDisease BMI 
+Race_Black(1): HeartDisease BMI 
+Race_Hispanic(1): HeartDisease BMI 
+Race_Other(1): HeartDisease BMI 
+Race_White(1): HeartDisease BMI 
+HeartDisease(2): 
+LogScore Bayes: -36373.21080785863
+LogScore BDeu: -36374.92870829988
+LogScore MDL: -36377.14333038593
+LogScore ENTROPY: -36361.181061648116
+LogScore AIC: -36364.181061648116
+
+
+Weight: 0.04
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(1): HeartDisease 
+Smoking(1): HeartDisease BMI 
+AlcoholDrinking(1): HeartDisease BMI 
+Stroke(1): HeartDisease BMI 
+PhysicalHealth(1): HeartDisease BMI 
+MentalHealth(1): HeartDisease BMI 
+DiffWalking(1): HeartDisease BMI 
+AgeCategory(2): HeartDisease BMI 
+Diabetic(1): HeartDisease BMI 
+PhysicalActivity(1): HeartDisease BMI 
+GenHealth(1): HeartDisease BMI 
+SleepTime(1): HeartDisease BMI 
+Asthma(1): HeartDisease BMI 
+KidneyDisease(1): HeartDisease BMI 
+SkinCancer(1): HeartDisease BMI 
+Sex_Female(1): HeartDisease BMI 
+Sex_Male(1): HeartDisease BMI 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(1): HeartDisease BMI 
+Race_Black(1): HeartDisease BMI 
+Race_Hispanic(1): HeartDisease BMI 
+Race_Other(1): HeartDisease BMI 
+Race_White(1): HeartDisease BMI 
+HeartDisease(2): 
+LogScore Bayes: -36354.71374602259
+LogScore BDeu: -36356.43164646384
+LogScore MDL: -36358.6457926715
+LogScore ENTROPY: -36342.68352393369
+LogScore AIC: -36345.68352393369
+
+
+Weight: 0.04
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(1): HeartDisease 
+Smoking(1): HeartDisease BMI 
+AlcoholDrinking(1): HeartDisease BMI 
+Stroke(1): HeartDisease BMI 
+PhysicalHealth(1): HeartDisease BMI 
+MentalHealth(1): HeartDisease BMI 
+DiffWalking(1): HeartDisease BMI 
+AgeCategory(2): HeartDisease BMI 
+Diabetic(1): HeartDisease BMI 
+PhysicalActivity(1): HeartDisease BMI 
+GenHealth(1): HeartDisease BMI 
+SleepTime(1): HeartDisease BMI 
+Asthma(1): HeartDisease BMI 
+KidneyDisease(1): HeartDisease BMI 
+SkinCancer(1): HeartDisease BMI 
+Sex_Female(1): HeartDisease BMI 
+Sex_Male(1): HeartDisease BMI 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(1): HeartDisease BMI 
+Race_Black(1): HeartDisease BMI 
+Race_Hispanic(1): HeartDisease BMI 
+Race_Other(1): HeartDisease BMI 
+Race_White(1): HeartDisease BMI 
+HeartDisease(2): 
+LogScore Bayes: -36339.214260841385
+LogScore BDeu: -36340.93216128263
+LogScore MDL: -36343.14590971039
+LogScore ENTROPY: -36327.18364097257
+LogScore AIC: -36330.18364097257
+
+
+Weight: 0.04
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(1): HeartDisease 
+Smoking(1): HeartDisease BMI 
+AlcoholDrinking(1): HeartDisease BMI 
+Stroke(1): HeartDisease BMI 
+PhysicalHealth(1): HeartDisease BMI 
+MentalHealth(1): HeartDisease BMI 
+DiffWalking(1): HeartDisease BMI 
+AgeCategory(2): HeartDisease BMI 
+Diabetic(1): HeartDisease BMI 
+PhysicalActivity(1): HeartDisease BMI 
+GenHealth(1): HeartDisease BMI 
+SleepTime(1): HeartDisease BMI 
+Asthma(1): HeartDisease BMI 
+KidneyDisease(1): HeartDisease BMI 
+SkinCancer(1): HeartDisease BMI 
+Sex_Female(1): HeartDisease BMI 
+Sex_Male(1): HeartDisease BMI 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(1): HeartDisease BMI 
+Race_Black(1): HeartDisease BMI 
+Race_Hispanic(1): HeartDisease BMI 
+Race_Other(1): HeartDisease BMI 
+Race_White(1): HeartDisease BMI 
+HeartDisease(2): 
+LogScore Bayes: -36326.2200369308
+LogScore BDeu: -36327.937937372044
+LogScore MDL: -36330.151352920955
+LogScore ENTROPY: -36314.18908418314
+LogScore AIC: -36317.18908418314
+
+
+Weight: 0.03
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 3.85 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.21 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7939               75.8987 %
+Incorrectly Classified Instances      2521               24.1013 %
+Kappa statistic                          0.518 
+Mean absolute error                      0.3185
+Root mean squared error                  0.4169
+Relative absolute error                 63.6969 %
+Root relative squared error             83.3711 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.777    0.259    0.750      0.777    0.763      0.518    0.822     0.784     Yes
+                 0.741    0.223    0.769      0.741    0.755      0.518    0.822     0.809     No
+Weighted Avg.    0.759    0.241    0.759      0.759    0.759      0.518    0.822     0.797     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4062 1164 |    a = Yes
+ 1357 3877 |    b = No
+

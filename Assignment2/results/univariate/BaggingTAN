@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     univ_train_data
+Instances:    41836
+Attributes:   7
+              Stroke
+              DiffWalking
+              KidneyDisease
+              Diabetic
+              GenHealth
+              AgeCategory
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+
+Time taken to build model: 0.5 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.07 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7889               75.4207 %
+Incorrectly Classified Instances      2571               24.5793 %
+Kappa statistic                          0.5084
+Mean absolute error                      0.3269
+Root mean squared error                  0.4107
+Relative absolute error                 65.384  %
+Root relative squared error             82.1386 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.789    0.280    0.737      0.789    0.762      0.510    0.827     0.803     Yes
+                 0.720    0.211    0.773      0.720    0.746      0.510    0.827     0.832     No
+Weighted Avg.    0.754    0.246    0.755      0.754    0.754      0.510    0.827     0.817     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4123 1103 |    a = Yes
+ 1468 3766 |    b = No
+

@@ -1,0 +1,189 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LDA -R 1.0E-6
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 20.12225711286791
+
+Mean vector:
+
+        23                  23
+         1  4.620685710847e-01
+         2  4.932354909647e-01
+         3  5.655416387800e-02
+         4  9.171526914619e-02
+         5  1.726264461229e-01
+         6  1.377035726806e-01
+         7  2.325270102304e-01
+         8  6.281555508413e-01
+         9  1.563964050100e-01
+        10  7.216990152023e-01
+        11  5.600141026867e-01
+        12  5.071917726360e-01
+        13  1.504206903146e-01
+        14  7.589157663257e-02
+        15  1.358399464576e-01
+        16  4.706472894158e-01
+        17  5.293527105842e-01
+        18  1.816617267425e-02
+        19  1.787933836887e-02
+        20  6.410746725308e-02
+        21  7.094368486471e-02
+        22  3.269911081365e-02
+        23  7.962042260255e-01
+
+Inverse of covariance matrix:
+
+  41.78  0.39  0.67  0.82  1.23  0.42 -1.77  2.66 -4.47  1.15  2.75  1.13 -0.83 -0.10  0.48  0.42 -0.42 -0.56  3.07 -1.48 -0.02 -0.43 -0.58
+  0.39  4.42 -0.95 -0.04 -0.02 -0.38 -0.15 -0.53 -0.07  0.25  1.00  0.32 -0.08  0.17  0.11  0.25 -0.25 -0.52  0.43  0.15  0.36 -0.21 -0.21
+  0.67 -0.95  19.24  0.08  0.11 -0.56  0.11  1.09  0.75  0.10 -0.36 -0.22  0.01  0.21 -0.10 -0.03  0.03 -0.05  0.44  0.02 -0.05 -0.05 -0.31
+  0.82 -0.04  0.08  13.14 -0.36 -0.33 -0.82 -0.43 -0.51  0.12  0.90 -0.20 -0.25 -0.41 -0.04 -0.01  0.01 -0.27  0.02 -0.24  0.29 -0.11  0.31
+  1.23 -0.02  0.11 -0.36  15.34 -2.66 -2.67  0.51  0.01  0.64  6.77  1.00 -0.27 -0.68 -0.08 -0.00  0.00 -0.05  0.12  0.29  0.14 -0.25 -0.25
+  0.42 -0.38 -0.56 -0.33 -2.66  15.54 -0.47  3.66  0.13  0.15  2.10  2.76 -0.45  0.03 -0.15 -0.44  0.44 -0.27  0.60  0.05  0.09 -0.29 -0.17
+ -1.77 -0.15  0.11 -0.82 -2.67 -0.47  8.43 -1.70 -0.51  1.05  2.05  0.44 -0.39 -0.51 -0.05 -0.21  0.21 -0.26  0.15 -0.09  0.03  0.02  0.15
+  2.66 -0.53  1.09 -0.43  0.51  3.66 -1.70  20.72 -1.55  0.63  1.64 -3.14  1.21 -0.62 -2.85 -0.43  0.43 -0.08  1.05 -0.68  1.28  0.09 -1.66
+ -4.47 -0.07  0.75 -0.51  0.01  0.13 -0.51 -1.55  15.19  0.19  2.11 -0.16 -0.24 -1.45  0.23  0.04 -0.04 -0.05 -0.55 -0.02 -0.14  0.18  0.57
+  1.15  0.25  0.10  0.12  0.64  0.15  1.05  0.63  0.19  5.87 -1.21  0.01 -0.08  0.13 -0.18  0.14 -0.14  0.14 -0.04  0.00  0.35 -0.25 -0.20
+  2.75  1.00 -0.36  0.90  6.77  2.10  2.05  1.64  2.11 -1.21  23.25 -1.36  0.82  1.18 -0.03 -0.04  0.04  0.18 -0.23  0.34  0.45 -0.18 -0.57
+  1.13  0.32 -0.22 -0.20  1.00  2.76  0.44 -3.14 -0.16  0.01 -1.36  38.17  0.46 -0.06 -0.20 -0.02  0.02 -0.31  0.49  0.52 -0.44  0.35 -0.61
+ -0.83 -0.08  0.01 -0.25 -0.27 -0.45 -0.39  1.21 -0.24 -0.08  0.82  0.46  8.27 -0.17 -0.15 -0.24  0.24 -0.06  0.17 -0.02  0.08 -0.28  0.10
+ -0.10  0.17  0.21 -0.41 -0.68  0.03 -0.51 -0.62 -1.45  0.13  1.18 -0.06 -0.17  15.48 -0.45 -0.04  0.04  0.06  0.11 -0.20  0.01  0.02 -0.00
+  0.48  0.11 -0.10 -0.04 -0.08 -0.15 -0.05 -2.85  0.23 -0.18 -0.03 -0.20 -0.15 -0.45  9.36  0.16 -0.16  0.09  0.15  0.52  0.05 -0.15 -0.66
+  0.42  0.25 -0.03 -0.01 -0.00 -0.44 -0.21 -0.43  0.04  0.14 -0.04 -0.02 -0.24 -0.04  0.16  500001.08  499998.92 -0.03  0.19 -0.17 -0.02 -0.02  0.05
+ -0.42 -0.25  0.03  0.01  0.00  0.44  0.21  0.43 -0.04 -0.14  0.04  0.02  0.24  0.04 -0.16  499998.92  500001.08  0.03 -0.19  0.17  0.02  0.02 -0.05
+ -0.56 -0.52 -0.05 -0.27 -0.05 -0.27 -0.26 -0.08 -0.05  0.14  0.18 -0.31 -0.06  0.06  0.09 -0.03  0.03  166708.35  166652.70  166659.74  166659.86  166657.24  166662.10
+  3.07  0.43  0.44  0.02  0.12  0.60  0.15  1.05 -0.55 -0.04 -0.23  0.49  0.17  0.11  0.15  0.19 -0.19  166652.70  166709.35  166659.35  166659.91  166656.94  166661.75
+ -1.48  0.15  0.02 -0.24  0.29  0.05 -0.09 -0.68 -0.02  0.00  0.34  0.52 -0.02 -0.20  0.52 -0.17  0.17  166659.74  166659.35  166682.04  166666.49  166663.76  166668.62
+ -0.02  0.36 -0.05  0.29  0.14  0.09  0.03  1.28 -0.14  0.35  0.45 -0.44  0.08  0.01  0.05 -0.02  0.02  166659.86  166659.91  166666.49  166681.03  166663.97  166668.72
+ -0.43 -0.21 -0.05 -0.11 -0.25 -0.29  0.02  0.09  0.18 -0.25 -0.18  0.35 -0.28  0.02 -0.15 -0.02  0.02  166657.24  166656.94  166663.76  166663.97  166691.91  166666.17
+ -0.58 -0.21 -0.31  0.31 -0.25 -0.17  0.15 -1.66  0.57 -0.20 -0.57 -0.61  0.10 -0.00 -0.66  0.05 -0.05  166662.10  166661.75  166668.62  166668.72  166666.17  166672.63
+
+
+
+Estimates for class value Yes
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+BMI: 0.48
+Smoking: 0.59
+AlcoholDrinking: 0.04
+Stroke: 0.16
+PhysicalHealth: 0.25
+MentalHealth: 0.15
+DiffWalking: 0.35
+AgeCategory: 0.75
+Diabetic: 0.23
+PhysicalActivity: 0.65
+GenHealth: 0.45
+SleepTime: 0.51
+Asthma: 0.17
+KidneyDisease: 0.12
+SkinCancer: 0.18
+Sex_Female: 0.41
+Sex_Male: 0.59
+Race_American_indian_Alaskan_native: 0.02
+Race_Asian: 0.01
+Race_Black: 0.06
+Race_Hispanic: 0.05
+Race_Other: 0.03
+Race_White: 0.83
+
+Estimates for class value No
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+BMI: 0.45
+Smoking: 0.4
+AlcoholDrinking: 0.07
+Stroke: 0.03
+PhysicalHealth: 0.09
+MentalHealth: 0.13
+DiffWalking: 0.11
+AgeCategory: 0.51
+Diabetic: 0.09
+PhysicalActivity: 0.79
+GenHealth: 0.67
+SleepTime: 0.51
+Asthma: 0.13
+KidneyDisease: 0.03
+SkinCancer: 0.09
+Sex_Female: 0.53
+Sex_Male: 0.47
+Race_American_indian_Alaskan_native: 0.02
+Race_Asian: 0.03
+Race_Black: 0.07
+Race_Hispanic: 0.09
+Race_Other: 0.03
+Race_White: 0.76
+
+
+
+Time taken to build model: 0.25 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.2 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        8023               76.7017 %
+Incorrectly Classified Instances      2437               23.2983 %
+Kappa statistic                          0.534 
+Mean absolute error                      0.3225
+Root mean squared error                  0.4014
+Relative absolute error                 64.5058 %
+Root relative squared error             80.2785 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.788    0.254    0.756      0.788    0.772      0.535    0.842     0.820     Yes
+                 0.746    0.212    0.779      0.746    0.762      0.535    0.842     0.847     No
+Weighted Avg.    0.767    0.233    0.767      0.767    0.767      0.535    0.842     0.833     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4116 1110 |    a = Yes
+ 1327 3907 |    b = No
+

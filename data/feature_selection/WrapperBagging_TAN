@@ -1,0 +1,62 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.ClassifierSubsetEval -B weka.classifiers.meta.Bagging -T -H "Click to set hold out or test instances" -E DEFAULT -- -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Search:       weka.attributeSelection.GreedyStepwise -T -1.7976931348623157E308 -N -1 -num-slots 1
+Relation:     random_smaller_sample
+Instances:    5000
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Greedy Stepwise (forwards).
+	Start set: no attributes
+	Merit of best subset found:    0.772
+
+Attribute Subset Evaluator (supervised, Class (nominal): 24 HeartDisease):
+	Classifier Subset Evaluator
+	Learning scheme: weka.classifiers.meta.Bagging
+	Scheme options: -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5 
+	Hold out/test set: Training data
+	Subset evaluation: classification error
+
+Selected attributes: 1,4,6,8,9,11,12,15,16,19,23 : 11
+                     BMI
+                     Stroke
+                     MentalHealth
+                     AgeCategory
+                     Diabetic
+                     GenHealth
+                     SleepTime
+                     SkinCancer
+                     Sex_Female
+                     Race_Asian
+                     Race_White
+

@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 103 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     multi_train_data
+Instances:    41836
+Attributes:   10
+              Smoking
+              Stroke
+              DiffWalking
+              AgeCategory
+              Diabetic
+              GenHealth
+              KidneyDisease
+              Sex_Female
+              Race_Asian
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 103 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 17.16 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7997               76.4532 %
+Incorrectly Classified Instances      2463               23.5468 %
+Kappa statistic                          0.5291
+Mean absolute error                      0.3253
+Root mean squared error                  0.4037
+Relative absolute error                 65.0515 %
+Root relative squared error             80.7375 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.813    0.284    0.741      0.813    0.775      0.532    0.838     0.816     Yes
+                 0.716    0.187    0.793      0.716    0.753      0.532    0.838     0.842     No
+Weighted Avg.    0.765    0.235    0.767      0.765    0.764      0.532    0.838     0.829     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4250  976 |    a = Yes
+ 1487 3747 |    b = No
+

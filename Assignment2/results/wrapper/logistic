@@ -1,0 +1,88 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     wrapper_bagging_logistic_train_data
+Instances:    41836
+Attributes:   12
+              Smoking
+              Stroke
+              AgeCategory
+              Diabetic
+              GenHealth
+              SkinCancer
+              Sex_Female
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                   Class
+Variable             Yes
+========================
+Smoking           0.3469
+Stroke            1.2388
+AgeCategory       3.5633
+Diabetic          0.8835
+GenHealth        -2.5205
+SkinCancer        0.1133
+Sex_Female       -0.7174
+Race_Asian        -0.615
+Race_Black       -0.2526
+Race_Hispanic    -0.2307
+Race_White       -0.0794
+Intercept         -0.858
+
+
+Odds Ratios...
+                   Class
+Variable             Yes
+========================
+Smoking           1.4147
+Stroke            3.4513
+AgeCategory      35.2778
+Diabetic          2.4193
+GenHealth         0.0804
+SkinCancer          1.12
+Sex_Female         0.488
+Race_Asian        0.5406
+Race_Black        0.7768
+Race_Hispanic      0.794
+Race_White        0.9237
+
+
+Time taken to build model: 0.28 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7993               76.4149 %
+Incorrectly Classified Instances      2467               23.5851 %
+Kappa statistic                          0.5283
+Mean absolute error                      0.3287
+Root mean squared error                  0.4043
+Relative absolute error                 65.7409 %
+Root relative squared error             80.8623 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.783    0.254    0.754      0.783    0.768      0.529    0.838     0.815     Yes
+                 0.746    0.217    0.775      0.746    0.760      0.529    0.838     0.842     No
+Weighted Avg.    0.764    0.236    0.765      0.764    0.764      0.529    0.838     0.829     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4090 1136 |    a = Yes
+ 1331 3903 |    b = No
+

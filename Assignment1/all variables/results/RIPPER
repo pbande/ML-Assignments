@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(GenHealth >= 0.75) and (AgeCategory <= 0.40625) => HeartDisease=No (5883.0/452.0)
+(GenHealth >= 0.5) and (AgeCategory <= 0.25) => HeartDisease=No (1603.0/171.0)
+(GenHealth >= 0.75) and (AgeCategory <= 0.640625) and (Sex_Female >= 1) and (BMI <= 0.362265) => HeartDisease=No (849.0/89.0)
+(GenHealth >= 0.75) and (AgeCategory <= 0.71875) and (Sex_Female >= 1) and (Diabetic <= 0.333333) => HeartDisease=No (2033.0/393.0)
+(GenHealth >= 0.5) and (Diabetic <= 0) and (AgeCategory <= 0.40625) and (SleepTime >= 0.5) and (Smoking <= 0) => HeartDisease=No (282.0/41.0)
+(GenHealth >= 0.5) and (Diabetic <= 0) and (PhysicalHealth <= 0.033333) and (AgeCategory <= 0.5625) => HeartDisease=No (2498.0/734.0)
+(Sex_Female >= 1) and (AgeCategory <= 0.796875) and (GenHealth >= 1) and (BMI <= 0.328116) => HeartDisease=No (105.0/11.0)
+(GenHealth >= 0.75) and (Diabetic <= 0.333333) and (AgeCategory <= 0.640625) => HeartDisease=No (1071.0/380.0)
+(GenHealth >= 0.5) and (AgeCategory <= 0.484375) and (Stroke <= 0) => HeartDisease=No (793.0/318.0)
+(Sex_Female >= 1) and (GenHealth >= 0.75) and (AgeCategory <= 0.796875) and (Diabetic <= 0) => HeartDisease=No (767.0/255.0)
+(DiffWalking <= 0) and (Sex_Female >= 1) and (GenHealth >= 1) => HeartDisease=No (349.0/122.0)
+(DiffWalking <= 0) and (Sex_Female >= 1) and (Smoking <= 0) and (Asthma <= 0) and (AgeCategory <= 0.5625) => HeartDisease=No (314.0/99.0)
+(GenHealth >= 0.5) and (AgeCategory <= 0.71875) and (Diabetic <= 0.333333) and (Sex_Female >= 1) and (DiffWalking <= 0) and (PhysicalHealth <= 0.033333) => HeartDisease=No (537.0/219.0)
+(GenHealth >= 1) and (AgeCategory <= 0.796875) and (Diabetic <= 0) => HeartDisease=No (497.0/183.0)
+(DiffWalking <= 0) and (AgeCategory <= 0.25) => HeartDisease=No (368.0/98.0)
+(Sex_Female >= 1) and (DiffWalking <= 0) and (GenHealth >= 0.75) and (Stroke <= 0) and (AgeCategory <= 0.875) => HeartDisease=No (637.0/276.0)
+(GenHealth >= 0.5) and (Sex_Female >= 1) and (Stroke <= 0) and (Smoking <= 0) and (AgeCategory <= 0.875) and (Race_White <= 0) and (BMI <= 0.528742) and (MentalHealth <= 0.166667) => HeartDisease=No (125.0/43.0)
+(GenHealth >= 0.5) and (Sex_Female >= 1) and (Diabetic <= 0.333333) and (AgeCategory <= 0.796875) and (Asthma <= 0) and (Smoking <= 0) and (BMI >= 0.443085) and (DiffWalking <= 0) => HeartDisease=No (111.0/41.0)
+ => HeartDisease=Yes (23014.0/6017.0)
+
+Number of Rules : 19
+
+
+Time taken to build model: 11.17 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.12 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7961               76.109  %
+Incorrectly Classified Instances      2499               23.891  %
+Kappa statistic                          0.5222
+Mean absolute error                      0.3484
+Root mean squared error                  0.4186
+Relative absolute error                 69.6762 %
+Root relative squared error             83.7109 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.809    0.287    0.738      0.809    0.772      0.525    0.788     0.719     Yes
+                 0.713    0.191    0.789      0.713    0.749      0.525    0.788     0.773     No
+Weighted Avg.    0.761    0.239    0.764      0.761    0.761      0.525    0.788     0.746     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4229  997 |    a = Yes
+ 1502 3732 |    b = No
+

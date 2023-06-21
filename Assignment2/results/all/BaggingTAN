@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+
+Time taken to build model: 2.96 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.22 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7935               75.8604 %
+Incorrectly Classified Instances      2525               24.1396 %
+Kappa statistic                          0.5172
+Mean absolute error                      0.3053
+Root mean squared error                  0.4086
+Relative absolute error                 61.0501 %
+Root relative squared error             81.7131 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.781    0.264    0.747      0.781    0.764      0.518    0.835     0.813     Yes
+                 0.736    0.219    0.771      0.736    0.753      0.518    0.835     0.844     No
+Weighted Avg.    0.759    0.241    0.759      0.759    0.758      0.518    0.835     0.828     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4083 1143 |    a = Yes
+ 1382 3852 |    b = No
+

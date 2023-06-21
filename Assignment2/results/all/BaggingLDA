@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.LDA -- -R 1.0E-6
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.functions.LDA -R 1.0E-6
+
+Time taken to build model: 0.36 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.17 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        8029               76.7591 %
+Incorrectly Classified Instances      2431               23.2409 %
+Kappa statistic                          0.5352
+Mean absolute error                      0.3224
+Root mean squared error                  0.4014
+Relative absolute error                 64.4747 %
+Root relative squared error             80.2773 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.790    0.254    0.756      0.790    0.772      0.536    0.842     0.820     Yes
+                 0.746    0.210    0.780      0.746    0.763      0.536    0.842     0.847     No
+Weighted Avg.    0.768    0.232    0.768      0.768    0.767      0.536    0.842     0.833     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4126 1100 |    a = Yes
+ 1331 3903 |    b = No
+

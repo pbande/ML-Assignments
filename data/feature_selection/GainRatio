@@ -1,0 +1,70 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.GainRatioAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 24 HeartDisease):
+	Gain Ratio feature evaluator
+
+Ranked attributes:
+ 0.089254    4 Stroke
+ 0.075529    7 DiffWalking
+ 0.064172   14 KidneyDisease
+ 0.055144    9 Diabetic
+ 0.054879   11 GenHealth
+ 0.045968    8 AgeCategory
+ 0.027096    5 PhysicalHealth
+ 0.025662    2 Smoking
+ 0.024353   15 SkinCancer
+ 0.02312    19 Race_Asian
+ 0.021935   10 PhysicalActivity
+ 0.012032   17 Sex_Male
+ 0.012032   16 Sex_Female
+ 0.011029   21 Race_Hispanic
+ 0.010287    3 AlcoholDrinking
+ 0.006065   23 Race_White
+ 0.004729   12 SleepTime
+ 0.004313    6 MentalHealth
+ 0.004211   13 Asthma
+ 0.004116    1 BMI
+ 0.001071   18 Race_American_indian_Alaskan_native
+ 0.000667   20 Race_Black
+ 0          22 Race_Other
+
+Selected attributes: 4,7,14,9,11,8,5,2,15,19,10,17,16,21,3,23,12,6,13,1,18,20,22 : 23
+

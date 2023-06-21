@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 51 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     knn_test_data
+Instances:    10460
+Attributes:   11
+              BMI
+              Smoking
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              GenHealth
+              SleepTime
+              SkinCancer
+              Sex_Female
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 51 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 5.12 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        8006               76.5392 %
+Incorrectly Classified Instances      2454               23.4608 %
+Kappa statistic                          0.5308
+Mean absolute error                      0.3305
+Root mean squared error                  0.4036
+Relative absolute error                 66.1047 %
+Root relative squared error             80.7177 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.806    0.276    0.745      0.806    0.774      0.533    0.838     0.813     Yes
+                 0.724    0.194    0.789      0.724    0.756      0.533    0.838     0.843     No
+Weighted Avg.    0.765    0.235    0.767      0.765    0.765      0.533    0.838     0.828     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4214 1012 |    a = Yes
+ 1442 3792 |    b = No
+

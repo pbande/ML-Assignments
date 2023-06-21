@@ -1,0 +1,164 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     wrapper_boosting_logistic_train_data
+Instances:    41836
+Attributes:   7
+              AlcoholDrinking
+              Stroke
+              AgeCategory
+              GenHealth
+              Asthma
+              SkinCancer
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                     Class
+Variable               Yes
+==========================
+AlcoholDrinking     -0.221
+Stroke              1.2484
+AgeCategory         3.6378
+GenHealth          -2.6908
+Asthma              0.2414
+SkinCancer          0.1636
+Intercept          -0.9702
+
+
+Odds Ratios...
+                     Class
+Variable               Yes
+==========================
+AlcoholDrinking     0.8017
+Stroke              3.4848
+AgeCategory        38.0087
+GenHealth           0.0678
+Asthma               1.273
+SkinCancer          1.1777
+
+
+Weight: 1.08
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                     Class
+Variable               Yes
+==========================
+AlcoholDrinking     0.0102
+Stroke              0.6873
+AgeCategory         1.3172
+GenHealth          -0.6277
+Asthma              0.1192
+SkinCancer         -0.0175
+Intercept          -0.6309
+
+
+Odds Ratios...
+                     Class
+Variable               Yes
+==========================
+AlcoholDrinking     1.0102
+Stroke              1.9883
+AgeCategory          3.733
+GenHealth           0.5338
+Asthma              1.1265
+SkinCancer          0.9827
+
+
+Weight: 0.13
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                     Class
+Variable               Yes
+==========================
+AlcoholDrinking     0.0167
+Stroke              0.5982
+AgeCategory         1.0268
+GenHealth          -0.4687
+Asthma              0.0904
+SkinCancer         -0.0107
+Intercept          -0.5145
+
+
+Odds Ratios...
+                     Class
+Variable               Yes
+==========================
+AlcoholDrinking     1.0169
+Stroke              1.8189
+AgeCategory         2.7922
+GenHealth           0.6258
+Asthma              1.0946
+SkinCancer          0.9894
+
+
+Weight: 0.06
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                     Class
+Variable               Yes
+==========================
+AlcoholDrinking     0.0155
+Stroke              0.5519
+AgeCategory         0.9012
+GenHealth          -0.4053
+Asthma              0.0775
+SkinCancer         -0.0135
+Intercept          -0.4545
+
+
+Odds Ratios...
+                     Class
+Variable               Yes
+==========================
+AlcoholDrinking     1.0156
+Stroke              1.7366
+AgeCategory         2.4625
+GenHealth           0.6667
+Asthma              1.0806
+SkinCancer          0.9866
+
+
+Weight: 0.0
+
+Number of performed Iterations: 4
+
+
+Time taken to build model: 0.77 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7811               74.675  %
+Incorrectly Classified Instances      2649               25.325  %
+Kappa statistic                          0.4935
+Mean absolute error                      0.3632
+Root mean squared error                  0.4339
+Relative absolute error                 72.6347 %
+Root relative squared error             86.7865 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.765    0.271    0.738      0.765    0.751      0.494    0.763     0.705     Yes
+                 0.729    0.235    0.756      0.729    0.742      0.494    0.763     0.708     No
+Weighted Avg.    0.747    0.253    0.747      0.747    0.747      0.494    0.763     0.707     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3998 1228 |    a = Yes
+ 1421 3813 |    b = No
+

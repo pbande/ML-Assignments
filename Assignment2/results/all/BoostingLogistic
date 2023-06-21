@@ -1,0 +1,379 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                     0.4075
+Smoking                                 0.3447
+AlcoholDrinking                         -0.229
+Stroke                                  1.1691
+PhysicalHealth                          0.1593
+MentalHealth                            0.1751
+DiffWalking                             0.2118
+AgeCategory                             3.6418
+Diabetic                                0.7412
+PhysicalActivity                        0.0044
+GenHealth                               -2.082
+SleepTime                              -0.3325
+Asthma                                  0.2672
+KidneyDisease                           0.6067
+SkinCancer                              0.0956
+Sex_Female                             -0.3843
+Sex_Male                                0.3843
+Race_American_indian_Alaskan_native     0.1644
+Race_Asian                             -0.4034
+Race_Black                             -0.1306
+Race_Hispanic                          -0.0697
+Race_Other                              0.1059
+Race_White                              0.0815
+Intercept                              -1.8297
+
+
+Odds Ratios...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                      1.503
+Smoking                                 1.4115
+AlcoholDrinking                         0.7953
+Stroke                                  3.2192
+PhysicalHealth                          1.1726
+MentalHealth                            1.1913
+DiffWalking                             1.2359
+AgeCategory                            38.1608
+Diabetic                                2.0985
+PhysicalActivity                        1.0044
+GenHealth                               0.1247
+SleepTime                               0.7171
+Asthma                                  1.3063
+KidneyDisease                           1.8344
+SkinCancer                              1.1004
+Sex_Female                              0.6809
+Sex_Male                                1.4686
+Race_American_indian_Alaskan_native     1.1787
+Race_Asian                               0.668
+Race_Black                              0.8776
+Race_Hispanic                           0.9327
+Race_Other                              1.1117
+Race_White                              1.0849
+
+
+Weight: 1.17
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                     0.2901
+Smoking                                 0.0999
+AlcoholDrinking                         0.0067
+Stroke                                  0.5629
+PhysicalHealth                          0.1414
+MentalHealth                            0.0694
+DiffWalking                             0.0064
+AgeCategory                             1.2405
+Diabetic                                0.1477
+PhysicalActivity                        0.0237
+GenHealth                              -0.5312
+SleepTime                              -0.2191
+Asthma                                  0.0778
+KidneyDisease                           0.2756
+SkinCancer                              0.0062
+Sex_Female                             -0.1056
+Sex_Male                                0.1056
+Race_American_indian_Alaskan_native     0.0806
+Race_Asian                             -0.1905
+Race_Black                             -0.0321
+Race_Hispanic                          -0.0194
+Race_Other                               0.012
+Race_White                               0.028
+Intercept                              -0.7971
+
+
+Odds Ratios...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                     1.3366
+Smoking                                 1.1051
+AlcoholDrinking                         1.0067
+Stroke                                  1.7557
+PhysicalHealth                          1.1519
+MentalHealth                            1.0718
+DiffWalking                             1.0064
+AgeCategory                             3.4574
+Diabetic                                1.1592
+PhysicalActivity                         1.024
+GenHealth                               0.5879
+SleepTime                               0.8032
+Asthma                                  1.0809
+KidneyDisease                           1.3173
+SkinCancer                              1.0062
+Sex_Female                              0.8998
+Sex_Male                                1.1114
+Race_American_indian_Alaskan_native     1.0839
+Race_Asian                              0.8265
+Race_Black                              0.9684
+Race_Hispanic                           0.9808
+Race_Other                              1.0121
+Race_White                              1.0284
+
+
+Weight: 0.12
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                     0.2578
+Smoking                                 0.0788
+AlcoholDrinking                         0.0104
+Stroke                                  0.4882
+PhysicalHealth                          0.1171
+MentalHealth                            0.0596
+DiffWalking                            -0.0024
+AgeCategory                             1.0233
+Diabetic                                0.1094
+PhysicalActivity                        0.0215
+GenHealth                              -0.4116
+SleepTime                              -0.1937
+Asthma                                  0.0641
+KidneyDisease                           0.2268
+SkinCancer                                  -0
+Sex_Female                             -0.0835
+Sex_Male                                0.0835
+Race_American_indian_Alaskan_native     0.0654
+Race_Asian                             -0.1649
+Race_Black                             -0.0251
+Race_Hispanic                          -0.0165
+Race_Other                              0.0085
+Race_White                              0.0237
+Intercept                              -0.6727
+
+
+Odds Ratios...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                      1.294
+Smoking                                  1.082
+AlcoholDrinking                         1.0105
+Stroke                                  1.6294
+PhysicalHealth                          1.1242
+MentalHealth                            1.0614
+DiffWalking                             0.9976
+AgeCategory                             2.7825
+Diabetic                                1.1156
+PhysicalActivity                        1.0217
+GenHealth                               0.6626
+SleepTime                               0.8239
+Asthma                                  1.0662
+KidneyDisease                           1.2546
+SkinCancer                                   1
+Sex_Female                              0.9199
+Sex_Male                                 1.087
+Race_American_indian_Alaskan_native     1.0676
+Race_Asian                               0.848
+Race_Black                              0.9752
+Race_Hispanic                           0.9836
+Race_Other                              1.0086
+Race_White                               1.024
+
+
+Weight: 0.01
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                     0.2541
+Smoking                                 0.0769
+AlcoholDrinking                         0.0107
+Stroke                                   0.481
+PhysicalHealth                          0.1148
+MentalHealth                            0.0587
+DiffWalking                            -0.0031
+AgeCategory                             1.0023
+Diabetic                                0.1062
+PhysicalActivity                        0.0213
+GenHealth                              -0.4008
+SleepTime                              -0.1906
+Asthma                                  0.0628
+KidneyDisease                           0.2221
+SkinCancer                             -0.0005
+Sex_Female                             -0.0814
+Sex_Male                                0.0814
+Race_American_indian_Alaskan_native     0.0641
+Race_Asian                             -0.1624
+Race_Black                             -0.0243
+Race_Hispanic                          -0.0163
+Race_Other                              0.0082
+Race_White                              0.0233
+Intercept                              -0.6604
+
+
+Odds Ratios...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                     1.2893
+Smoking                                 1.0799
+AlcoholDrinking                         1.0108
+Stroke                                  1.6178
+PhysicalHealth                          1.1216
+MentalHealth                            1.0604
+DiffWalking                             0.9969
+AgeCategory                             2.7246
+Diabetic                                 1.112
+PhysicalActivity                        1.0215
+GenHealth                               0.6698
+SleepTime                               0.8264
+Asthma                                  1.0648
+KidneyDisease                           1.2487
+SkinCancer                              0.9995
+Sex_Female                              0.9218
+Sex_Male                                1.0848
+Race_American_indian_Alaskan_native     1.0662
+Race_Asian                              0.8501
+Race_Black                               0.976
+Race_Hispanic                           0.9839
+Race_Other                              1.0082
+Race_White                              1.0235
+
+
+Weight: 0.0
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                     0.2535
+Smoking                                 0.0766
+AlcoholDrinking                         0.0108
+Stroke                                  0.4799
+PhysicalHealth                          0.1144
+MentalHealth                            0.0585
+DiffWalking                            -0.0032
+AgeCategory                              0.999
+Diabetic                                0.1056
+PhysicalActivity                        0.0212
+GenHealth                              -0.3991
+SleepTime                              -0.1901
+Asthma                                  0.0626
+KidneyDisease                           0.2214
+SkinCancer                             -0.0006
+Sex_Female                             -0.0811
+Sex_Male                                0.0811
+Race_American_indian_Alaskan_native     0.0639
+Race_Asian                              -0.162
+Race_Black                             -0.0242
+Race_Hispanic                          -0.0162
+Race_Other                              0.0082
+Race_White                              0.0232
+Intercept                              -0.6584
+
+
+Odds Ratios...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                     1.2885
+Smoking                                 1.0796
+AlcoholDrinking                         1.0108
+Stroke                                  1.6159
+PhysicalHealth                          1.1212
+MentalHealth                            1.0603
+DiffWalking                             0.9968
+AgeCategory                             2.7156
+Diabetic                                1.1114
+PhysicalActivity                        1.0215
+GenHealth                               0.6709
+SleepTime                               0.8268
+Asthma                                  1.0646
+KidneyDisease                           1.2478
+SkinCancer                              0.9994
+Sex_Female                              0.9221
+Sex_Male                                1.0845
+Race_American_indian_Alaskan_native      1.066
+Race_Asian                              0.8504
+Race_Black                              0.9761
+Race_Hispanic                           0.9839
+Race_Other                              1.0082
+Race_White                              1.0235
+
+
+Weight: 0.0
+
+Number of performed Iterations: 5
+
+
+Time taken to build model: 2.95 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.08 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        8036               76.826  %
+Incorrectly Classified Instances      2424               23.174  %
+Kappa statistic                          0.5365
+Mean absolute error                      0.3468
+Root mean squared error                  0.4212
+Relative absolute error                 69.3535 %
+Root relative squared error             84.233  %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.781    0.244    0.762      0.781    0.771      0.537    0.780     0.720     Yes
+                 0.756    0.219    0.775      0.756    0.766      0.537    0.780     0.722     No
+Weighted Avg.    0.768    0.232    0.768      0.768    0.768      0.537    0.780     0.721     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4079 1147 |    a = Yes
+ 1277 3957 |    b = No
+

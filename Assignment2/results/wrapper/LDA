@@ -1,0 +1,109 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LDA -R 1.0E-6
+Relation:     wrapper_lda_train_data
+Instances:    41836
+Attributes:   8
+              AlcoholDrinking
+              MentalHealth
+              AgeCategory
+              GenHealth
+              SkinCancer
+              Sex_Female
+              Race_Asian
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 2.9750340046626214
+
+Mean vector:
+
+         7                   7
+         1  5.655416387800e-02
+         2  1.377035726806e-01
+         3  6.281555508413e-01
+         4  5.600141026867e-01
+         5  1.358399464576e-01
+         6  4.706472894158e-01
+         7  1.787933836887e-02
+
+Inverse of covariance matrix:
+
+  18.94 -0.62  0.92 -0.53 -0.14  0.05  0.77
+ -0.62  14.57  3.67  4.20 -0.17 -0.95  0.75
+  0.92  3.67  18.81  2.20 -3.04 -0.84  2.09
+ -0.53  4.20  2.20  16.15 -0.21  0.17 -0.29
+ -0.14 -0.17 -3.04 -0.21  9.21  0.33  0.57
+  0.05 -0.95 -0.84  0.17  0.33  4.19  0.24
+  0.77  0.75  2.09 -0.29  0.57  0.24  57.59
+
+
+
+Estimates for class value Yes
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+AlcoholDrinking: 0.04
+MentalHealth: 0.15
+AgeCategory: 0.75
+GenHealth: 0.45
+SkinCancer: 0.18
+Sex_Female: 0.41
+Race_Asian: 0.01
+
+Estimates for class value No
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+AlcoholDrinking: 0.07
+MentalHealth: 0.13
+AgeCategory: 0.51
+GenHealth: 0.67
+SkinCancer: 0.09
+Sex_Female: 0.53
+Race_Asian: 0.03
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7936               75.87   %
+Incorrectly Classified Instances      2524               24.13   %
+Kappa statistic                          0.5174
+Mean absolute error                      0.3378
+Root mean squared error                  0.4107
+Relative absolute error                 67.568  %
+Root relative squared error             82.1338 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.794    0.277    0.741      0.794    0.767      0.519    0.827     0.798     Yes
+                 0.723    0.206    0.779      0.723    0.750      0.519    0.827     0.831     No
+Weighted Avg.    0.759    0.241    0.760      0.759    0.758      0.519    0.827     0.815     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4150 1076 |    a = Yes
+ 1448 3786 |    b = No
+

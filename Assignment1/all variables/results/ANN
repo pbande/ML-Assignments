@@ -1,0 +1,106 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 1
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.3500274185418597
+    Node 2    2.473485432582976
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    1.35002741854186
+    Node 2    -2.4734854325829763
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    11.863605755266821
+    Attrib BMI    3.6058647923408844
+    Attrib Smoking    3.7104942797702027
+    Attrib AlcoholDrinking    -2.2961840171566705
+    Attrib Stroke    37.83426537829076
+    Attrib PhysicalHealth    5.667980986886001
+    Attrib MentalHealth    3.9300800499784945
+    Attrib DiffWalking    3.842038422331507
+    Attrib AgeCategory    34.12219668962746
+    Attrib Diabetic    6.852856841083836
+    Attrib PhysicalActivity    0.2935597803157413
+    Attrib GenHealth    -18.891752637862716
+    Attrib SleepTime    -4.567582246808078
+    Attrib Asthma    2.245631061435795
+    Attrib KidneyDisease    6.483985255255347
+    Attrib SkinCancer    2.8114977846246325
+    Attrib Sex_Female    -3.560500066650155
+    Attrib Sex_Male    3.5804827791694063
+    Attrib Race_American_indian_Alaskan_native    -7.460961072276004
+    Attrib Race_Asian    -14.352908874154751
+    Attrib Race_Black    -5.731579667024408
+    Attrib Race_Hispanic    -8.698666214322529
+    Attrib Race_Other    -5.165317525721952
+    Attrib Race_White    -5.991335986313879
+Class Yes
+    Input
+    Node 0
+Class No
+    Input
+    Node 1
+
+
+Time taken to build model: 8.73 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.05 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7987               76.3576 %
+Incorrectly Classified Instances      2473               23.6424 %
+Kappa statistic                          0.5271
+Mean absolute error                      0.3555
+Root mean squared error                  0.4226
+Relative absolute error                 71.0965 %
+Root relative squared error             84.5207 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.735    0.208    0.779      0.735    0.757      0.528    0.839     0.808     Yes
+                 0.792    0.265    0.750      0.792    0.770      0.528    0.839     0.837     No
+Weighted Avg.    0.764    0.236    0.764      0.764    0.763      0.528    0.839     0.823     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3842 1384 |    a = Yes
+ 1089 4145 |    b = No
+

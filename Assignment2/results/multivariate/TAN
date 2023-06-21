@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     multi_train_data
+Instances:    41836
+Attributes:   10
+              Smoking
+              Stroke
+              DiffWalking
+              AgeCategory
+              Diabetic
+              GenHealth
+              KidneyDisease
+              Sex_Female
+              Race_Asian
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=10 #classindex=9
+Network structure (nodes followed by parents)
+Smoking(2): HeartDisease GenHealth 
+Stroke(2): HeartDisease GenHealth 
+DiffWalking(2): HeartDisease GenHealth 
+AgeCategory(12): HeartDisease DiffWalking 
+Diabetic(4): HeartDisease GenHealth 
+GenHealth(5): HeartDisease 
+KidneyDisease(2): HeartDisease GenHealth 
+Sex_Female(2): HeartDisease DiffWalking 
+Race_Asian(2): HeartDisease AgeCategory 
+HeartDisease(2): 
+LogScore Bayes: -306931.1405293123
+LogScore BDeu: -307410.81813318626
+LogScore MDL: -307359.325197891
+LogScore ENTROPY: -306555.89100475446
+LogScore AIC: -306706.89100475446
+
+
+Time taken to build model: 0.09 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7980               76.2906 %
+Incorrectly Classified Instances      2480               23.7094 %
+Kappa statistic                          0.5258
+Mean absolute error                      0.3157
+Root mean squared error                  0.4045
+Relative absolute error                 63.1469 %
+Root relative squared error             80.9087 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.799    0.273    0.745      0.799    0.771      0.527    0.838     0.816     Yes
+                 0.727    0.201    0.783      0.727    0.754      0.527    0.838     0.843     No
+Weighted Avg.    0.763    0.237    0.764      0.763    0.763      0.527    0.838     0.829     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4173 1053 |    a = Yes
+ 1427 3807 |    b = No
+

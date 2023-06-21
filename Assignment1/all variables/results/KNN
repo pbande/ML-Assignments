@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 103 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 103 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 26.24 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7894               75.4685 %
+Incorrectly Classified Instances      2566               24.5315 %
+Kappa statistic                          0.5094
+Mean absolute error                      0.3459
+Root mean squared error                  0.4117
+Relative absolute error                 69.182  %
+Root relative squared error             82.3393 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.761    0.252    0.751      0.761    0.756      0.509    0.827     0.806     Yes
+                 0.748    0.239    0.758      0.748    0.753      0.509    0.827     0.831     No
+Weighted Avg.    0.755    0.245    0.755      0.755    0.755      0.509    0.827     0.819     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3978 1248 |    a = Yes
+ 1318 3916 |    b = No
+

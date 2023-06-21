@@ -1,0 +1,108 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     univ_train_data
+Instances:    41836
+Attributes:   7
+              Stroke
+              DiffWalking
+              KidneyDisease
+              Diabetic
+              GenHealth
+              AgeCategory
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                   Class
+Variable             Yes
+========================
+Stroke            1.1717
+DiffWalking       0.2196
+KidneyDisease     0.6012
+Diabetic          0.7945
+GenHealth        -2.3331
+AgeCategory        3.488
+Intercept        -1.2307
+
+
+Odds Ratios...
+                   Class
+Variable             Yes
+========================
+Stroke            3.2273
+DiffWalking       1.2455
+KidneyDisease     1.8244
+Diabetic          2.2133
+GenHealth          0.097
+AgeCategory      32.7189
+
+
+Weight: 1.1
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                   Class
+Variable             Yes
+========================
+Stroke            0.6496
+DiffWalking       0.0132
+KidneyDisease     0.3382
+Diabetic           0.123
+GenHealth        -0.6626
+AgeCategory       1.1716
+Intercept        -0.5405
+
+
+Odds Ratios...
+                   Class
+Variable             Yes
+========================
+Stroke            1.9148
+DiffWalking       1.0132
+KidneyDisease     1.4024
+Diabetic          1.1309
+GenHealth         0.5155
+AgeCategory        3.227
+
+
+Weight: 0.18
+
+Number of performed Iterations: 2
+
+
+Time taken to build model: 0.44 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7890               75.4302 %
+Incorrectly Classified Instances      2570               24.5698 %
+Kappa statistic                          0.5086
+Mean absolute error                      0.3578
+Root mean squared error                  0.4288
+Relative absolute error                 71.5581 %
+Root relative squared error             85.7612 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.771    0.262    0.746      0.771    0.758      0.509    0.771     0.715     Yes
+                 0.738    0.229    0.763      0.738    0.750      0.509    0.771     0.712     No
+Weighted Avg.    0.754    0.246    0.755      0.754    0.754      0.509    0.771     0.713     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4028 1198 |    a = Yes
+ 1372 3862 |    b = No
+

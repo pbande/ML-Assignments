@@ -1,0 +1,70 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     univ_train_data
+Instances:    41836
+Attributes:   7
+              Stroke
+              DiffWalking
+              KidneyDisease
+              Diabetic
+              GenHealth
+              AgeCategory
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: Yes, No
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.8632 * (normalized) Stroke
+ +      -0.1274 * (normalized) DiffWalking
+ +      -0.4358 * (normalized) KidneyDisease
+ +      -0.7425 * (normalized) Diabetic
+ +       1.9823 * (normalized) GenHealth
+ +      -2.9511 * (normalized) AgeCategory
+ +       0.9591
+
+Number of kernel evaluations: 197252330 (44.407% cached)
+
+
+
+Time taken to build model: 11.25 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7886               75.392  %
+Incorrectly Classified Instances      2574               24.608  %
+Kappa statistic                          0.5079
+Mean absolute error                      0.2461
+Root mean squared error                  0.4961
+Relative absolute error                 49.2161 %
+Root relative squared error             99.2129 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.779    0.271    0.742      0.779    0.760      0.508    0.754     0.688     Yes
+                 0.729    0.221    0.767      0.729    0.748      0.508    0.754     0.695     No
+Weighted Avg.    0.754    0.246    0.755      0.754    0.754      0.508    0.754     0.692     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4070 1156 |    a = Yes
+ 1418 3816 |    b = No
+

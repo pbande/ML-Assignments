@@ -1,0 +1,128 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     ann_train_data
+Instances:    41836
+Attributes:   9
+              AlcoholDrinking
+              Stroke
+              DiffWalking
+              AgeCategory
+              Diabetic
+              GenHealth
+              Sex_Female
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.2473951873048315
+    Node 2    -1.2166544942315176
+    Node 3    1.435975013591174
+    Node 4    0.5752017684430302
+    Node 5    -1.532363907165144
+    Node 6    0.7113814740803914
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.24739518730483157
+    Node 2    1.2166544942315174
+    Node 3    -1.4359750135911749
+    Node 4    -0.5752017684430298
+    Node 5    1.5323639071651445
+    Node 6    -0.7113814740803911
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -27.518012673286133
+    Attrib AlcoholDrinking    0.6907737313754718
+    Attrib Stroke    -15.069024079834994
+    Attrib DiffWalking    -2.644591080949609
+    Attrib AgeCategory    -18.014040657395427
+    Attrib Diabetic    -3.5238130675998276
+    Attrib GenHealth    12.767871303070324
+    Attrib Sex_Female    3.7527915504529674
+    Attrib Race_White    6.3826298850026575
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -10.006886856250517
+    Attrib AlcoholDrinking    -1.733031841750259
+    Attrib Stroke    0.859005589427806
+    Attrib DiffWalking    0.8618503051660692
+    Attrib AgeCategory    13.363536207625781
+    Attrib Diabetic    3.3311258792989618
+    Attrib GenHealth    -7.72172333666768
+    Attrib Sex_Female    -6.0905823771235665
+    Attrib Race_White    1.8085779029261728
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.040821739946077
+    Attrib AlcoholDrinking    -0.7401789126409644
+    Attrib Stroke    11.156861400273717
+    Attrib DiffWalking    2.269632600296608
+    Attrib AgeCategory    -4.103461804031981
+    Attrib Diabetic    0.2662809684148368
+    Attrib GenHealth    -12.750502656123695
+    Attrib Sex_Female    2.666092448991024
+    Attrib Race_White    -6.403106968417525
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -12.832058707714399
+    Attrib AlcoholDrinking    0.08041503081575843
+    Attrib Stroke    -8.27629382044104
+    Attrib DiffWalking    -1.3356235458730255
+    Attrib AgeCategory    -10.392985465024658
+    Attrib Diabetic    -2.5013981624011086
+    Attrib GenHealth    5.96354961320811
+    Attrib Sex_Female    1.8287432194857682
+    Attrib Race_White    -3.4705909133218085
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -1.0921112507890076
+    Attrib AlcoholDrinking    -3.060009474526777
+    Attrib Stroke    13.540636466829657
+    Attrib DiffWalking    2.119088067253165
+    Attrib AgeCategory    15.773389484591018
+    Attrib Diabetic    4.704943144566339
+    Attrib GenHealth    -13.123385117885935
+    Attrib Sex_Female    1.360911666199204
+    Attrib Race_White    4.661520102151634
+Class Yes
+    Input
+    Node 0
+Class No
+    Input
+    Node 1
+
+
+Time taken to build model: 15 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7901               75.5354 %
+Incorrectly Classified Instances      2559               24.4646 %
+Kappa statistic                          0.5107
+Mean absolute error                      0.3229
+Root mean squared error                  0.4058
+Relative absolute error                 64.5737 %
+Root relative squared error             81.1602 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.707    0.197    0.782      0.707    0.743      0.513    0.839     0.813     Yes
+                 0.803    0.293    0.733      0.803    0.767      0.513    0.839     0.842     No
+Weighted Avg.    0.755    0.245    0.758      0.755    0.755      0.513    0.839     0.827     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3697 1529 |    a = Yes
+ 1030 4204 |    b = No
+

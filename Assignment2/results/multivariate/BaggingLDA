@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.LDA -- -R 1.0E-6
+Relation:     multi_train_data
+Instances:    41836
+Attributes:   10
+              Smoking
+              Stroke
+              DiffWalking
+              AgeCategory
+              Diabetic
+              GenHealth
+              KidneyDisease
+              Sex_Female
+              Race_Asian
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.functions.LDA -R 1.0E-6
+
+Time taken to build model: 0.18 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.07 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        8019               76.6635 %
+Incorrectly Classified Instances      2441               23.3365 %
+Kappa statistic                          0.5333
+Mean absolute error                      0.3242
+Root mean squared error                  0.4028
+Relative absolute error                 64.8342 %
+Root relative squared error             80.5596 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.787    0.254    0.756      0.787    0.771      0.534    0.840     0.817     Yes
+                 0.746    0.213    0.778      0.746    0.762      0.534    0.840     0.844     No
+Weighted Avg.    0.767    0.233    0.767      0.767    0.767      0.534    0.840     0.831     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4115 1111 |    a = Yes
+ 1330 3904 |    b = No
+

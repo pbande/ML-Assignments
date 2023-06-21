@@ -1,0 +1,368 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.LDA -- -R 1.0E-6
+Relation:     wrapper_boosting_lda_train_data
+Instances:    41836
+Attributes:   8
+              AlcoholDrinking
+              MentalHealth
+              AgeCategory
+              GenHealth
+              SkinCancer
+              Sex_Female
+              Race_Asian
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 2.9750340046626214
+
+Mean vector:
+
+         7                   7
+         1  5.655416387800e-02
+         2  1.377035726806e-01
+         3  6.281555508413e-01
+         4  5.600141026867e-01
+         5  1.358399464576e-01
+         6  4.706472894158e-01
+         7  1.787933836887e-02
+
+Inverse of covariance matrix:
+
+  18.94 -0.62  0.92 -0.53 -0.14  0.05  0.77
+ -0.62  14.57  3.67  4.20 -0.17 -0.95  0.75
+  0.92  3.67  18.81  2.20 -3.04 -0.84  2.09
+ -0.53  4.20  2.20  16.15 -0.21  0.17 -0.29
+ -0.14 -0.17 -3.04 -0.21  9.21  0.33  0.57
+  0.05 -0.95 -0.84  0.17  0.33  4.19  0.24
+  0.77  0.75  2.09 -0.29  0.57  0.24  57.59
+
+
+
+Estimates for class value Yes
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+AlcoholDrinking: 0.04
+MentalHealth: 0.15
+AgeCategory: 0.75
+GenHealth: 0.45
+SkinCancer: 0.18
+Sex_Female: 0.41
+Race_Asian: 0.01
+
+Estimates for class value No
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+AlcoholDrinking: 0.07
+MentalHealth: 0.13
+AgeCategory: 0.51
+GenHealth: 0.67
+SkinCancer: 0.09
+Sex_Female: 0.53
+Race_Asian: 0.03
+
+
+
+Weight: 1.1
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 2.925035932196643
+
+Mean vector:
+
+         7                   7
+         1  5.692230174391e-02
+         2  1.361567275261e-01
+         3  6.457848006234e-01
+         4  5.610574313786e-01
+         5  1.352868473255e-01
+         6  4.782213845446e-01
+         7  1.673899155233e-02
+
+Inverse of covariance matrix:
+
+  18.79 -0.59  1.19 -0.52 -0.17  0.05  0.87
+ -0.59  14.58  3.64  4.14 -0.24 -0.93  0.71
+  1.19  3.64  17.98  2.87 -3.12 -0.62  2.13
+ -0.52  4.14  2.87  15.14 -0.19  0.09 -0.46
+ -0.17 -0.24 -3.12 -0.19  9.15  0.33  0.69
+  0.05 -0.93 -0.62  0.09  0.33  4.10  0.24
+  0.87  0.71  2.13 -0.46  0.69  0.24  61.32
+
+
+
+Estimates for class value Yes
+
+Natural logarithm of class prior probability: -0.74
+Class prior probability: 0.48
+
+Mean vector:
+
+AlcoholDrinking: 0.05
+MentalHealth: 0.14
+AgeCategory: 0.69
+GenHealth: 0.52
+SkinCancer: 0.15
+Sex_Female: 0.45
+Race_Asian: 0.01
+
+Estimates for class value No
+
+Natural logarithm of class prior probability: -0.65
+Class prior probability: 0.52
+
+Mean vector:
+
+AlcoholDrinking: 0.06
+MentalHealth: 0.13
+AgeCategory: 0.6
+GenHealth: 0.6
+SkinCancer: 0.12
+Sex_Female: 0.5
+Race_Asian: 0.02
+
+
+
+Weight: 0.16
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 2.933085734577949
+
+Mean vector:
+
+         7                   7
+         1  5.726142054490e-02
+         2  1.361487378623e-01
+         3  6.485428237380e-01
+         4  5.614532139791e-01
+         5  1.350337367996e-01
+         6  4.792169106128e-01
+         7  1.636233747413e-02
+
+Inverse of covariance matrix:
+
+  18.68 -0.58  1.20 -0.49 -0.17  0.06  0.88
+ -0.58  14.55  3.63  4.11 -0.25 -0.92  0.72
+  1.20  3.63  18.03  2.79 -3.12 -0.61  2.22
+ -0.49  4.11  2.79  15.11 -0.19  0.11 -0.49
+ -0.17 -0.25 -3.12 -0.19  9.16  0.33  0.68
+  0.06 -0.92 -0.61  0.11  0.33  4.10  0.24
+  0.88  0.72  2.22 -0.49  0.68  0.24  62.69
+
+
+
+Estimates for class value Yes
+
+Natural logarithm of class prior probability: -0.73
+Class prior probability: 0.48
+
+Mean vector:
+
+AlcoholDrinking: 0.06
+MentalHealth: 0.14
+AgeCategory: 0.68
+GenHealth: 0.54
+SkinCancer: 0.15
+Sex_Female: 0.46
+Race_Asian: 0.01
+
+Estimates for class value No
+
+Natural logarithm of class prior probability: -0.65
+Class prior probability: 0.52
+
+Mean vector:
+
+AlcoholDrinking: 0.06
+MentalHealth: 0.13
+AgeCategory: 0.62
+GenHealth: 0.59
+SkinCancer: 0.12
+Sex_Female: 0.49
+Race_Asian: 0.02
+
+
+
+Weight: 0.01
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 2.9335941261830563
+
+Mean vector:
+
+         7                   7
+         1  5.727807725806e-02
+         2  1.361478434136e-01
+         3  6.486840492661e-01
+         4  5.614756710906e-01
+         5  1.350172626435e-01
+         6  4.792640288120e-01
+         7  1.634432637820e-02
+
+Inverse of covariance matrix:
+
+  18.67 -0.58  1.20 -0.49 -0.17  0.06  0.88
+ -0.58  14.55  3.63  4.11 -0.25 -0.92  0.72
+  1.20  3.63  18.04  2.78 -3.12 -0.61  2.22
+ -0.49  4.11  2.78  15.11 -0.19  0.11 -0.49
+ -0.17 -0.25 -3.12 -0.19  9.16  0.33  0.68
+  0.06 -0.92 -0.61  0.11  0.33  4.10  0.24
+  0.88  0.72  2.22 -0.49  0.68  0.24  62.76
+
+
+
+Estimates for class value Yes
+
+Natural logarithm of class prior probability: -0.73
+Class prior probability: 0.48
+
+Mean vector:
+
+AlcoholDrinking: 0.06
+MentalHealth: 0.14
+AgeCategory: 0.68
+GenHealth: 0.54
+SkinCancer: 0.15
+Sex_Female: 0.46
+Race_Asian: 0.01
+
+Estimates for class value No
+
+Natural logarithm of class prior probability: -0.66
+Class prior probability: 0.52
+
+Mean vector:
+
+AlcoholDrinking: 0.06
+MentalHealth: 0.13
+AgeCategory: 0.62
+GenHealth: 0.59
+SkinCancer: 0.12
+Sex_Female: 0.49
+Race_Asian: 0.02
+
+
+
+Weight: 0.0
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 2.933790856525503
+
+Mean vector:
+
+         7                   7
+         1  5.728443614006e-02
+         2  1.361476047604e-01
+         3  6.487384744835e-01
+         4  5.614849054962e-01
+         5  1.350113004370e-01
+         6  4.792831400409e-01
+         7  1.633747021302e-02
+
+Inverse of covariance matrix:
+
+  18.67 -0.58  1.20 -0.49 -0.17  0.06  0.88
+ -0.58  14.55  3.63  4.11 -0.25 -0.92  0.72
+  1.20  3.63  18.04  2.78 -3.12 -0.61  2.22
+ -0.49  4.11  2.78  15.11 -0.19  0.11 -0.49
+ -0.17 -0.25 -3.12 -0.19  9.16  0.33  0.68
+  0.06 -0.92 -0.61  0.11  0.33  4.10  0.24
+  0.88  0.72  2.22 -0.49  0.68  0.24  62.79
+
+
+
+Estimates for class value Yes
+
+Natural logarithm of class prior probability: -0.73
+Class prior probability: 0.48
+
+Mean vector:
+
+AlcoholDrinking: 0.06
+MentalHealth: 0.14
+AgeCategory: 0.68
+GenHealth: 0.54
+SkinCancer: 0.15
+Sex_Female: 0.46
+Race_Asian: 0.01
+
+Estimates for class value No
+
+Natural logarithm of class prior probability: -0.66
+Class prior probability: 0.52
+
+Mean vector:
+
+AlcoholDrinking: 0.06
+MentalHealth: 0.13
+AgeCategory: 0.62
+GenHealth: 0.58
+SkinCancer: 0.12
+Sex_Female: 0.49
+Race_Asian: 0.02
+
+
+
+Weight: 0.0
+
+Number of performed Iterations: 5
+
+
+Time taken to build model: 0.33 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.04 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7936               75.87   %
+Incorrectly Classified Instances      2524               24.13   %
+Kappa statistic                          0.5174
+Mean absolute error                      0.3552
+Root mean squared error                  0.4265
+Relative absolute error                 71.0393 %
+Root relative squared error             85.2911 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.794    0.277    0.741      0.794    0.767      0.519    0.773     0.712     Yes
+                 0.723    0.206    0.779      0.723    0.750      0.519    0.773     0.718     No
+Weighted Avg.    0.759    0.241    0.760      0.759    0.758      0.519    0.773     0.715     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4150 1076 |    a = Yes
+ 1448 3786 |    b = No
+

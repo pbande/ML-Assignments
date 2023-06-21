@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     wrapper_bagging_logistic_train_data
+Instances:    41836
+Attributes:   12
+              Smoking
+              Stroke
+              AgeCategory
+              Diabetic
+              GenHealth
+              SkinCancer
+              Sex_Female
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+
+Time taken to build model: 2.48 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.06 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        8004               76.5201 %
+Incorrectly Classified Instances      2456               23.4799 %
+Kappa statistic                          0.5304
+Mean absolute error                      0.3285
+Root mean squared error                  0.4043
+Relative absolute error                 65.7059 %
+Root relative squared error             80.8605 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.790    0.259    0.753      0.790    0.771      0.531    0.838     0.815     Yes
+                 0.741    0.210    0.779      0.741    0.759      0.531    0.838     0.842     No
+Weighted Avg.    0.765    0.235    0.766      0.765    0.765      0.531    0.838     0.829     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4127 1099 |    a = Yes
+ 1357 3877 |    b = No
+

@@ -1,0 +1,124 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                     0.4075
+Smoking                                 0.3447
+AlcoholDrinking                         -0.229
+Stroke                                  1.1691
+PhysicalHealth                          0.1593
+MentalHealth                            0.1751
+DiffWalking                             0.2118
+AgeCategory                             3.6418
+Diabetic                                0.7412
+PhysicalActivity                        0.0044
+GenHealth                               -2.082
+SleepTime                              -0.3325
+Asthma                                  0.2672
+KidneyDisease                           0.6067
+SkinCancer                              0.0956
+Sex_Female                             -0.3843
+Sex_Male                                0.3843
+Race_American_indian_Alaskan_native     0.1644
+Race_Asian                             -0.4034
+Race_Black                             -0.1306
+Race_Hispanic                          -0.0697
+Race_Other                              0.1059
+Race_White                              0.0815
+Intercept                              -1.8297
+
+
+Odds Ratios...
+                                         Class
+Variable                                   Yes
+==============================================
+BMI                                      1.503
+Smoking                                 1.4115
+AlcoholDrinking                         0.7953
+Stroke                                  3.2192
+PhysicalHealth                          1.1726
+MentalHealth                            1.1913
+DiffWalking                             1.2359
+AgeCategory                            38.1608
+Diabetic                                2.0985
+PhysicalActivity                        1.0044
+GenHealth                               0.1247
+SleepTime                               0.7171
+Asthma                                  1.3063
+KidneyDisease                           1.8344
+SkinCancer                              1.1004
+Sex_Female                              0.6809
+Sex_Male                                1.4686
+Race_American_indian_Alaskan_native     1.1787
+Race_Asian                               0.668
+Race_Black                              0.8776
+Race_Hispanic                           0.9327
+Race_Other                              1.1117
+Race_White                              1.0849
+
+
+Time taken to build model: 0.74 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.14 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        8036               76.826  %
+Incorrectly Classified Instances      2424               23.174  %
+Kappa statistic                          0.5365
+Mean absolute error                      0.3245
+Root mean squared error                  0.4015
+Relative absolute error                 64.8907 %
+Root relative squared error             80.2907 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.781    0.244    0.762      0.781    0.771      0.537    0.843     0.821     Yes
+                 0.756    0.219    0.775      0.756    0.766      0.537    0.843     0.847     No
+Weighted Avg.    0.768    0.232    0.768      0.768    0.768      0.537    0.843     0.834     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4079 1147 |    a = Yes
+ 1277 3957 |    b = No
+

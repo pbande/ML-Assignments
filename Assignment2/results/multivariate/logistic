@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     multi_train_data
+Instances:    41836
+Attributes:   10
+              Smoking
+              Stroke
+              DiffWalking
+              AgeCategory
+              Diabetic
+              GenHealth
+              KidneyDisease
+              Sex_Female
+              Race_Asian
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                   Class
+Variable             Yes
+========================
+Smoking           0.3485
+Stroke            1.1775
+DiffWalking       0.2973
+AgeCategory       3.5286
+Diabetic          0.7826
+GenHealth         -2.262
+KidneyDisease     0.6287
+Sex_Female       -0.7552
+Race_Asian       -0.4976
+Intercept        -1.1303
+
+
+Odds Ratios...
+                   Class
+Variable             Yes
+========================
+Smoking           1.4169
+Stroke            3.2461
+DiffWalking       1.3462
+AgeCategory      34.0761
+Diabetic          2.1871
+GenHealth         0.1041
+KidneyDisease     1.8753
+Sex_Female        0.4699
+Race_Asian         0.608
+
+
+Time taken to build model: 0.21 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        8004               76.5201 %
+Incorrectly Classified Instances      2456               23.4799 %
+Kappa statistic                          0.5304
+Mean absolute error                      0.3266
+Root mean squared error                  0.4029
+Relative absolute error                 65.3211 %
+Root relative squared error             80.5888 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.773    0.243    0.761      0.773    0.767      0.530    0.840     0.818     Yes
+                 0.757    0.227    0.770      0.757    0.763      0.530    0.840     0.845     No
+Weighted Avg.    0.765    0.235    0.765      0.765    0.765      0.530    0.840     0.831     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4041 1185 |    a = Yes
+ 1271 3963 |    b = No
+

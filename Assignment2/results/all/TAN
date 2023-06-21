@@ -1,0 +1,99 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     train_data
+Instances:    41836
+Attributes:   24
+              BMI
+              Smoking
+              AlcoholDrinking
+              Stroke
+              PhysicalHealth
+              MentalHealth
+              DiffWalking
+              AgeCategory
+              Diabetic
+              PhysicalActivity
+              GenHealth
+              SleepTime
+              Asthma
+              KidneyDisease
+              SkinCancer
+              Sex_Female
+              Sex_Male
+              Race_American_indian_Alaskan_native
+              Race_Asian
+              Race_Black
+              Race_Hispanic
+              Race_Other
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=24 #classindex=23
+Network structure (nodes followed by parents)
+BMI(4): HeartDisease Diabetic 
+Smoking(2): HeartDisease GenHealth 
+AlcoholDrinking(2): HeartDisease Smoking 
+Stroke(2): HeartDisease GenHealth 
+PhysicalHealth(4): HeartDisease MentalHealth 
+MentalHealth(4): HeartDisease Sex_Female 
+DiffWalking(2): HeartDisease GenHealth 
+AgeCategory(12): HeartDisease MentalHealth 
+Diabetic(4): HeartDisease GenHealth 
+PhysicalActivity(2): HeartDisease GenHealth 
+GenHealth(5): HeartDisease PhysicalHealth 
+SleepTime(7): HeartDisease MentalHealth 
+Asthma(2): HeartDisease GenHealth 
+KidneyDisease(2): HeartDisease GenHealth 
+SkinCancer(2): HeartDisease AgeCategory 
+Sex_Female(2): HeartDisease 
+Sex_Male(2): HeartDisease Sex_Female 
+Race_American_indian_Alaskan_native(1): HeartDisease BMI 
+Race_Asian(2): HeartDisease Race_White 
+Race_Black(1): HeartDisease BMI 
+Race_Hispanic(2): HeartDisease Race_White 
+Race_Other(1): HeartDisease BMI 
+Race_White(2): HeartDisease AgeCategory 
+HeartDisease(2): 
+LogScore Bayes: -586444.036637297
+LogScore BDeu: -587772.1303711437
+LogScore MDL: -587565.7515826101
+LogScore ENTROPY: -585517.2604279245
+LogScore AIC: -585902.2604279245
+
+
+Time taken to build model: 0.51 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.16 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7939               75.8987 %
+Incorrectly Classified Instances      2521               24.1013 %
+Kappa statistic                          0.518 
+Mean absolute error                      0.3047
+Root mean squared error                  0.4091
+Relative absolute error                 60.948  %
+Root relative squared error             81.8156 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.777    0.259    0.750      0.777    0.763      0.518    0.834     0.811     Yes
+                 0.741    0.223    0.769      0.741    0.755      0.518    0.834     0.843     No
+Weighted Avg.    0.759    0.241    0.759      0.759    0.759      0.518    0.834     0.827     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4062 1164 |    a = Yes
+ 1357 3877 |    b = No
+

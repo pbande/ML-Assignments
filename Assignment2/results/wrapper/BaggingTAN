@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     wrapper_bagging_tan_train_data
+Instances:    41836
+Attributes:   12
+              BMI
+              Stroke
+              MentalHealth
+              AgeCategory
+              Diabetic
+              GenHealth
+              SleepTime
+              SkinCancer
+              Sex_Female
+              Race_Asian
+              Race_White
+              HeartDisease
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+
+Time taken to build model: 1.05 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.13 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        7922               75.7361 %
+Incorrectly Classified Instances      2538               24.2639 %
+Kappa statistic                          0.5147
+Mean absolute error                      0.3154
+Root mean squared error                  0.4071
+Relative absolute error                 63.078  %
+Root relative squared error             81.4212 %
+Total Number of Instances            10460     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.788    0.273    0.742      0.788    0.764      0.516    0.834     0.813     Yes
+                 0.727    0.212    0.774      0.727    0.750      0.516    0.834     0.842     No
+Weighted Avg.    0.757    0.243    0.758      0.757    0.757      0.516    0.834     0.828     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4116 1110 |    a = Yes
+ 1428 3806 |    b = No
+
